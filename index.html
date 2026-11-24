@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="es" data-tema="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#006fad">
+  <title>Tablero ejecutivo TRACKIO · Propuesta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <!-- Hoja de estilos de Workspace Comercial (tema.css), incrustada para compartir en un solo archivo -->
+  <style>
+/* Workspace Comercial · paleta y estilo de la Biblioteca Documental Técnica de Vive Energía (192.168.1.153:8766), con tipografía Montserrat. */
+:root {
+  /* Azul principal de la marca (#006FAD): barra lateral, títulos y cifras. */
+  --azul: #006fad;
+  --nav-bg: var(--gradient-brand-v);              /* barra lateral: el mismo degradado del encabezado, en vertical */
+  --navy-deep: #0b3b73;                         /* azul marino: tooltips y títulos grandes del móvil */
+  --navy: var(--azul);
+  --navy-soft: #0b6fb8;
+  --brand-green: #2ea84a;
+  --brand-green-dark: #23903d;
+  --brand-green-soft: #e6f5ea;
+  --on-verde: #fff;                             /* texto sobre botones y estados en verde */
+  --background: #f4f7fa;
+  --foreground: #1c2b3a;
+  --card: #fff;
+  --surface: #f8fafc;
+  --muted: #eef2f6;
+  --muted-foreground: #6b7a89;
+  --border: #e6ecf1;
+  --navy-foreground: oklch(98% 0.005 250);
+  --ok: #2ea84a;
+  --warn: oklch(76% 0.16 80);
+  --bad: #e5484d;
+  --info: #0b6fb8;
+  /* Degradado de marca (encabezado, VivIA y menú móvil): turquesa → azul, el de la Biblioteca Documental (#0a948b → #0b86a0 → #0a5aa6) con los dos primeros tonos
+     un poco más oscuros para que el texto blanco llegue a contraste 4.5:1 */
+  --gradient-brand: linear-gradient(115deg, #08837b 0%, #0a7f9a 45%, #0a5aa6 100%);
+  /* Vertical para la barra lateral: arriba el turquesa donde empieza el encabezado (sin costura) y abajo el azul donde termina */
+  --gradient-brand-v: linear-gradient(180deg, #08837b 0%, #0a7f9a 45%, #0a5aa6 100%);
+  --gradient-soft: linear-gradient(180deg, oklch(99% 0.005 245) 0%, oklch(100% 0 0) 100%);
+  --shadow-card: 0 6px 24px rgba(16, 40, 70, .08);
+  --radius-lg: 20px; --radius-xl: 16px; --radius-md: 12px; --radius-sm: 8px;
+  --font: "Montserrat", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --nav-w: 276px;  /* con la sangría del menú, las etiquetas más largas + insignia caben en un renglón */
+  /* series de gráficas */
+  --c1: #2ea84a; --c2: #0b6fb8; --c3: #0a8f8a;
+  --c4: #e8742a; --c5: #e5484d; --c6: #6b7a89;
+  --warn-txt: oklch(45% 0.1 70);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { font-family: var(--font); background: var(--background); color: var(--foreground); font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4 { margin: 0; font-weight: 600; letter-spacing: -0.01em; }
+button { font-family: inherit; cursor: pointer; }
+a { color: inherit; }
+.oculto { display: none !important; }
+
+/* ===== Estructura ===== */
+.app { display: grid; grid-template-columns: var(--nav-w) 1fr; min-height: 100vh; }
+.nav { background: var(--nav-bg); color: var(--navy-foreground); position: sticky; top: 0; height: 100vh; overflow-y: auto; scrollbar-width: thin; scrollbar-color: oklch(100% 0 0 / .25) transparent; padding: 18px 12px 24px; display: flex; flex-direction: column; gap: 4px; }
+.logo-vive { display: block; padding: 10px 10px 18px; margin-bottom: 8px; border-bottom: 1px solid oklch(100% 0 0 / .1); transition: opacity .15s; }
+.logo-vive:hover, .logo-vive:focus-visible { opacity: .8; outline: none; }
+.logo-vive img { display: block; width: 100%; max-width: 190px; height: auto; }
+.marca { display: flex; align-items: center; gap: 10px; padding: 6px 10px 12px; text-decoration: none; }
+.marca-logo { width: 34px; height: 34px; border-radius: 10px; background: var(--navy-foreground); display: grid; place-items: center; flex: none; }
+.marca-logo img { width: 22px; height: 22px; object-fit: contain; display: block; }
+.nav-fijar { display: none; align-self: flex-start; margin: 0 10px 6px; padding: 4px 11px; border-radius: 999px; background: oklch(100% 0 0 / .14); border: 1px solid oklch(100% 0 0 / .28); color: inherit; font: 600 11px/1.4 var(--font); }
+.nav-fijar:hover, .nav-fijar:focus-visible { background: oklch(100% 0 0 / .24); outline: none; }
+.nav-franja { display: none; position: fixed; left: 0; top: 0; bottom: 0; width: 10px; z-index: 44; }
+.barra-logo { display: none; align-items: center; margin-right: 6px; flex: none; }
+.barra-logo img { display: block; height: 26px; width: auto; }
+.marca-texto b { display: block; font-size: 15px; font-weight: 700; }
+.marca-texto span { font-size: 11px; opacity: .82; }
+/* Jerarquía del menú: el grupo es el título (mayúsculas, 12 px, negrita) y sus opciones cuelgan de él con sangría y una línea guía */
+.nav-grupo { display: flex; align-items: center; gap: 8px; width: calc(100% - 20px); margin: 16px 10px 4px; padding: 4px 0; background: none; border: 0; color: inherit; font-family: inherit; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; opacity: .92; cursor: pointer; text-align: left; }
+.nav-grupo:hover, .nav-grupo:focus-visible { opacity: 1; outline: none; }
+.nav-grupo .flecha { display: inline-block; width: 12px; font-size: 12px; text-align: center; transition: transform .15s; }
+.nav-grupo.cerrado .flecha { transform: rotate(-90deg); }
+.nav-grupo .marca-activa { margin-left: auto; width: 7px; height: 7px; border-radius: 50%; background: var(--brand-green); }
+.nav-sub { display: flex; flex-direction: column; gap: 2px; margin: 0 0 2px 15px; padding-left: 7px; border-left: 1px solid oklch(100% 0 0 / .16); }
+.nav a.item { position: relative; display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: var(--radius-sm); text-decoration: none; font-weight: 500; font-size: 13px; line-height: 1.35; color: oklch(0.98 0.005 250 / .9); border: 0; transition: background .15s, color .15s; }
+.nav a.item:hover { background: oklch(100% 0 0 / .07); }
+.nav a.item.activo { background: var(--brand-green); color: var(--on-verde); font-weight: 600; box-shadow: 0 2px 8px oklch(0% 0 0 / .22), inset 0 0 0 1px oklch(100% 0 0 / .22); }
+.nav a.item.activo::before { content: ''; position: absolute; left: -9px; top: 5px; bottom: 5px; width: 3px; border-radius: 2px; background: var(--brand-green); }
+.nav a.item.pendiente { color: oklch(0.98 0.005 250 / .6); }
+.nav a.item.pendiente:hover { color: oklch(0.98 0.005 250 / .85); }
+.nav a.item.pendiente.activo { color: var(--on-verde); }
+.nav .item-texto { min-width: 0; }
+.insignia { margin-left: auto; font-size: 9.5px; font-weight: 600; padding: 1px 6px; border-radius: 999px; background: none; border: 1px solid oklch(100% 0 0 / .26); letter-spacing: .03em; white-space: nowrap; flex: none; }
+.nav a.item.activo .insignia { border-color: oklch(19% 0.06 258 / .3); }
+.nav-pie { margin-top: auto; padding: 14px 10px 0; font-size: 11px; opacity: .78; }
+
+.principal { min-width: 0; display: flex; flex-direction: column; }
+.barra { position: sticky; top: 0; z-index: 20; background: var(--gradient-brand); color: var(--navy-foreground); display: flex; align-items: center; gap: 10px; padding: 12px 24px; flex-wrap: wrap; }
+.barra h1 { font-size: 18px; font-weight: 700; margin-right: auto; text-shadow: 0 1px 2px oklch(0% 0 0 / .18); }
+.barra .sub { display: block; font-size: 12px; font-weight: 600; margin-top: 1px; text-shadow: 0 1px 2px oklch(0% 0 0 / .18); }
+.barra .menu-btn { display: none; background: oklch(100% 0 0 / .12); border: 0; color: inherit; width: 36px; height: 36px; border-radius: 10px; font-size: 18px; }
+.datos-al { font-size: 11.5px; opacity: .92; text-align: right; line-height: 1.3; }
+.datos-al b { font-weight: 600; }
+.usuario { font-size: 12px; padding: 6px 12px; border-radius: 999px; background: oklch(100% 0 0 / .12); font-weight: 500; }
+.contenido { padding: 24px 28px 48px; max-width: 1500px; width: 100%; }
+
+/* ===== Controles ===== */
+.btn { border: 0; border-radius: var(--radius-md); padding: 9px 16px; font-weight: 600; font-size: 13px; display: inline-flex; align-items: center; gap: 8px; transition: filter .15s, transform .05s; }
+.btn:active { transform: translateY(1px); }
+.btn-verde { background: var(--brand-green); color: var(--on-verde); }
+.btn-verde:hover { filter: brightness(1.06); }
+.btn[disabled] { opacity: .6; cursor: progress; }
+.btn-linea[disabled] { opacity: .5; cursor: not-allowed; }
+.btn-linea { background: transparent; border: 1px solid var(--border); color: var(--foreground); }
+.btn-chico { padding: 5px 10px; font-size: 12px; border-radius: var(--radius-sm); }
+select, input[type=search] { font-family: inherit; font-size: 13px; border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 7px 10px; background: var(--card); color: var(--foreground); }
+.barra select { background: oklch(100% 0 0 / .1); border-color: oklch(100% 0 0 / .25); color: var(--navy-foreground); }
+.barra select option { color: var(--foreground); }
+.tabs { display: inline-flex; background: oklch(100% 0 0 / .1); border-radius: var(--radius-md); padding: 3px; gap: 2px; }
+.tabs a { padding: 6px 14px; border-radius: 9px; text-decoration: none; font-weight: 600; font-size: 12.5px; opacity: .8; }
+.tabs a.activo { background: var(--brand-green); color: var(--on-verde); opacity: 1; }
+
+/* Selector de tema (claro / oscuro): hereda el color del contenedor, así se funde con su fondo */
+.selector-tema { position: relative; display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; background: color-mix(in oklch, currentColor 12%, transparent); }
+.selector-tema button { position: relative; z-index: 1; width: 28px; height: 26px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 999px; background: none; color: inherit; opacity: .6; transition: opacity .2s; }
+.selector-tema button:hover { opacity: .9; }
+.selector-tema button[aria-checked="true"] { opacity: 1; }
+.selector-tema button:focus-visible { outline: 2px solid var(--brand-green); outline-offset: 1px; }
+.selector-pastilla { position: absolute; top: 3px; left: 3px; width: 28px; height: 26px; border-radius: 999px; background: color-mix(in oklch, currentColor 22%, transparent); box-shadow: 0 1px 3px oklch(0% 0 0 / .25); transition: transform .25s cubic-bezier(.3, .9, .3, 1); }
+.selector-tema[data-activo="oscuro"] .selector-pastilla { transform: translateX(30px); }
+
+/* ===== Tarjetas y rejilla ===== */
+.rejilla { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
+.c3 { grid-column: span 3; } .c4 { grid-column: span 4; } .c5 { grid-column: span 5; } .c6 { grid-column: span 6; }
+.c7 { grid-column: span 7; } .c8 { grid-column: span 8; } .c12 { grid-column: span 12; } .c2 { grid-column: span 2; }
+.tarjeta { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: var(--shadow-card); padding: 18px 20px; min-width: 0; }
+.tarjeta-cab { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
+.tarjeta-cab h3 { font-size: 14.5px; }
+.tarjeta-cab .nota { font-size: 12px; color: var(--muted-foreground); margin-top: 2px; }
+.tarjeta-cab .acc { margin-left: auto; display: flex; gap: 6px; }
+.seccion-titulo { grid-column: span 12; display: flex; align-items: baseline; gap: 10px; margin: 10px 0 -4px; }
+.seccion-titulo h2 { font-size: 15px; color: var(--navy); }
+.seccion-titulo span { font-size: 12px; color: var(--muted-foreground); }
+/* Secciones en botones (componentes/secciones.js): un botón tipo píldora por sección; solo se ve la del botón activo */
+.secciones-botones { grid-column: 1 / -1; justify-self: start; display: flex; flex-wrap: wrap; gap: 4px; padding: 5px; max-width: 100%;
+  border-radius: 999px; background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow-card); }
+.secciones-boton { display: inline-flex; align-items: center; padding: 8px 16px; border: 0; border-radius: 999px; background: none;
+  color: var(--muted-foreground); font-weight: 600; font-size: 13px; transition: background .2s, color .2s; }
+.secciones-boton:hover { color: var(--navy); background: var(--muted); }
+.secciones-boton.activo { background: var(--azul); color: #fff; box-shadow: 0 2px 8px rgba(0, 111, 173, .3); }
+.secciones-boton:focus-visible { outline: 2px solid var(--brand-green); outline-offset: 2px; }
+.secciones-panel { grid-column: 1 / -1; animation: secciones-entra .22s ease-out; }
+.secciones-panel[hidden] { display: none !important; }
+@keyframes secciones-entra { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@media (max-width: 720px) {
+  .secciones-botones { width: 100%; flex-wrap: nowrap; overflow-x: auto; border-radius: var(--radius-md); scrollbar-width: none; }
+  .secciones-boton { flex: none; }
+}
+#detalle-clientes { scroll-margin-top: 84px; }  /* el encabezado fijo no tapa el título al saltar al detalle */
+
+/* Las tarjetas KPI de una misma fila comparten cinco líneas (título, valor, detalle, variación, meta) con subgrid, así las cifras quedan a la misma altura. */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0 14px; margin-bottom: -14px; grid-column: span 12; }
+.kpi { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: var(--shadow-card); padding: 16px 18px 14px; position: relative; overflow: hidden;
+  display: grid; grid-template-rows: subgrid; grid-row: span 5; row-gap: 0; margin-bottom: 14px; }
+/* Estado de la tarjeta: cápsula con texto arriba a la derecha y tinte suave abajo (el color nunca va solo). */
+.kpi { --c: var(--ok); --t: oklch(95% 0.05 152); --txt: oklch(45% 0.15 152); --estado: "Al día"; }
+.kpi.warn { --c: var(--warn); --t: oklch(95% 0.07 85); --txt: oklch(50% 0.12 70); --estado: "En vigilancia"; }
+.kpi.bad { --c: var(--bad); --t: oklch(95% 0.04 27); --txt: oklch(48% 0.19 27); --estado: "Atención"; }
+.kpi.info { --c: var(--info); --t: oklch(95% 0.03 235); --txt: oklch(45% 0.12 235); --estado: "Informativo"; }
+/* Título de dos líneas exactas: la primera deja sitio a la cápsula de estado y la segunda usa todo el ancho (el título completo va en el tooltip) */
+.kpi .et { box-sizing: content-box; height: 2.6em; overflow: hidden; line-height: 1.3; }
+.kpi.estado .et::before { content: ""; float: right; width: 96px; height: 1.3em; }
+.kpi.estado::after { content: var(--estado); position: absolute; top: 12px; right: 14px; padding: 4px 10px 4px 22px; border-radius: 999px; font-size: 10.5px; font-weight: 600; line-height: 1.3; white-space: nowrap; color: var(--txt);
+  background: radial-gradient(circle at 11px 50%, var(--c) 0 3.5px, color-mix(in oklch, var(--c) 25%, transparent) 4px 6.5px, transparent 7px), var(--t); }
+.kpi .et { font-size: 11.5px; font-weight: 600; color: var(--muted-foreground); text-transform: uppercase; letter-spacing: .05em; }
+.kpi .val { font-size: 25px; font-weight: 700; margin: 6px 0 2px; letter-spacing: -0.02em; color: var(--navy); }
+.kpi .sub { font-size: 12px; color: var(--muted-foreground); }
+.kpi { transition: box-shadow .15s; }
+.kpi:hover { box-shadow: inset 0 3px 0 var(--brand-green), var(--shadow-card); }  /* borde verde superior, como en la Biblioteca Documental */
+.kpi .delta { font-size: 12px; font-weight: 600; margin-top: 4px; }
+.kpi .sub:empty, .kpi .delta:empty { margin: 0; }
+.kpi .delta.sube-bien, .kpi .delta.baja-bien { color: var(--brand-green-dark); }
+.kpi .delta.sube-mal, .kpi .delta.baja-mal { color: var(--bad); }
+.kpi .delta.neutro { color: var(--muted-foreground); }
+.kpi .meta { margin-top: 8px; font-size: 10.5px; color: var(--muted-foreground); border-top: 1px dashed var(--border); padding-top: 6px; padding-right: 24px; }
+.kpi .meta:empty { margin: 0; border: 0; padding: 0; }
+
+/* ===== Chips, semáforos, progreso ===== */
+.chip { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 600; padding: 2px 9px; border-radius: 999px; background: var(--muted); color: var(--muted-foreground); white-space: nowrap; }
+.chip.ok { background: oklch(94% 0.06 152); color: oklch(40% 0.12 152); }
+.chip.warn { background: oklch(95% 0.07 85); color: oklch(45% 0.1 70); }
+.chip.bad { background: oklch(94% 0.05 27); color: oklch(45% 0.17 27); }
+.chip.info { background: oklch(94% 0.04 235); color: oklch(40% 0.1 245); }
+.chip.fase { background: var(--navy); color: var(--navy-foreground); }
+.semaforo { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; background: var(--muted-foreground); }
+.semaforo.ok { background: var(--ok); } .semaforo.warn { background: var(--warn); } .semaforo.bad { background: var(--bad); }
+.progreso { height: 8px; border-radius: 999px; background: var(--muted); overflow: hidden; min-width: 90px; }
+.progreso > i { display: block; height: 100%; border-radius: 999px; background: var(--ok); }
+.progreso.warn > i { background: var(--warn); } .progreso.bad > i { background: var(--bad); }
+.fila-prog { display: flex; align-items: center; gap: 10px; }
+.fila-prog .progreso { flex: 1; }
+.fila-prog b { min-width: 46px; text-align: right; font-size: 12.5px; }
+
+/* ===== Tablas ===== */
+.tabla-caja { overflow-x: auto; }
+table.tabla { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.tabla th { text-align: left; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--muted-foreground); padding: 8px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; user-select: none; }
+table.tabla th.ord { cursor: pointer; } table.tabla th.ord:hover { color: var(--foreground); }
+table.tabla td { padding: 9px 10px; border-bottom: 1px solid var(--muted); vertical-align: middle; }
+table.tabla tr:hover td { background: var(--surface); }
+table.tabla .der { text-align: right; font-variant-numeric: tabular-nums; }
+table.tabla tr.sel td { background: var(--brand-green-soft); }
+/* Cliente dado de baja: fila atenuada y en grises; la etiqueta "Inactivo" se mantiene legible */
+table.tabla tr.inactivo td { color: var(--muted-foreground); }
+table.tabla tr.inactivo td:first-child b { color: var(--muted-foreground); font-weight: 600; }
+table.tabla tr.inactivo td:not(:first-child) { opacity: .5; filter: grayscale(1); }
+.chip-inactivo { margin-left: 8px; padding: 1px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 600; background: var(--muted); color: var(--muted-foreground); border: 1px solid var(--border); white-space: nowrap; }
+.tabla-pie { display: flex; align-items: center; gap: 10px; margin-top: 10px; font-size: 12px; color: var(--muted-foreground); }
+
+/* ===== Gráficas ===== */
+.grafica { position: relative; width: 100%; }
+.grafica svg { width: 100%; height: auto; display: block; overflow: visible; }
+.grafica text { font-family: var(--font); font-size: 10.5px; fill: var(--muted-foreground); }
+.grafica .linea-malla { stroke: var(--border); stroke-width: 1; }
+/* Animación de gráficas (barras que crecen, trazos que se dibujan, pulso y ondas) */
+@keyframes g-crece { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes g-dibuja { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes g-aparece { from { opacity: 0; } to { opacity: 1; } }
+@keyframes g-marcha { to { stroke-dashoffset: -9; } }
+@keyframes g-respira { 0%, 100% { filter: brightness(1) drop-shadow(0 0 0 transparent); } 50% { filter: brightness(1.3) drop-shadow(0 0 7px var(--sombra, var(--c1))); } }
+@keyframes g-onda { 0% { transform: scale(.5); opacity: .8; } 100% { transform: scale(1.8); opacity: 0; } }
+.g-barra { transform-box: fill-box; transform-origin: 50% 100%; animation: g-crece .7s cubic-bezier(.2, .8, .2, 1) both; animation-delay: min(calc(var(--i) * 30ms), 900ms); }
+.g-barra.g-neg { transform-origin: 50% 0; }
+.g-barra.g-viva { animation: g-crece .7s cubic-bezier(.2, .8, .2, 1) both, g-respira 1.6s ease-in-out infinite; animation-delay: min(calc(var(--i) * 30ms), 900ms), 1.2s; }
+.g-traza { stroke-dasharray: 1; animation: g-dibuja 1.5s ease-out both; }
+.g-flujo { animation: g-aparece 1s .5s both, g-marcha .6s linear infinite; }
+.g-punto { animation: g-aparece .5s 1.2s both; }
+.g-onda { transform-box: fill-box; transform-origin: 50% 50%; animation: g-onda 2.4s ease-out 1.4s infinite backwards; }
+.g-onda.b { animation-delay: 2.6s; }
+/* Tras un cambio de tamaño la gráfica se redibuja sin repetir la entrada; sí siguen el pulso, el flujo y las ondas */
+.grafica.sin-entrada .g-barra:not(.g-viva) { animation: none; }
+.grafica.sin-entrada .g-barra.g-viva { animation: g-respira 1.6s ease-in-out infinite; }
+.grafica.sin-entrada .g-traza, .grafica.sin-entrada .g-punto { animation: none; }
+.grafica.sin-entrada .g-flujo { animation: g-marcha .6s linear infinite; }
+.grafica.sin-entrada .g-traza.g-nueva { animation: g-dibuja 1.5s ease-out both; }  /* selector de estadísticos: la línea recién activada sí se dibuja */
+/* Dona de participación y ranking horizontal */
+@keyframes g-dona { from { stroke-dasharray: 0 100; } }
+@keyframes g-crece-x { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.mini-titulo { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--muted-foreground); margin: 14px 0 6px; }
+.mini-titulo:first-child { margin-top: 0; }
+.dona { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.dona svg { width: 150px; height: 150px; flex: none; overflow: visible; }
+.g-dona { cursor: default; transition: opacity .15s; animation: g-dona .9s cubic-bezier(.2, .8, .2, 1) both; animation-delay: calc(var(--i) * 120ms); }
+.g-dona.g-atenuada { opacity: .3; }
+.grafica text, .dona text { font-family: var(--font); }
+.dona .dona-valor { font-size: 22px; font-weight: 700; fill: var(--navy); }
+.dona .dona-etiqueta { font-size: 10px; font-weight: 600; fill: var(--muted-foreground); text-transform: uppercase; letter-spacing: .05em; }
+.dona-leyenda { flex: 1; min-width: 190px; display: flex; flex-direction: column; gap: 8px; font-size: 12.5px; }
+.dona-leyenda > div { display: grid; grid-template-columns: 10px 1fr auto 42px; align-items: center; gap: 8px; }
+.dona-leyenda i { width: 10px; height: 10px; border-radius: 3px; }
+.dona-leyenda span { color: var(--muted-foreground); }
+.dona-leyenda small { text-align: right; color: var(--muted-foreground); font-size: 11.5px; }
+/* Una sola rejilla para todas las filas (las filas usan display: contents) para que las barras arranquen alineadas.
+   El nombre toma lo que necesita hasta el 45 % del ancho (nombres largos como razones sociales); la barra se acorta, mínimo 60 px. */
+.ranking { display: grid; grid-template-columns: fit-content(45%) minmax(60px, 1fr) auto 40px; align-items: center; gap: 7px 10px; font-size: 12.5px; }
+.rank-fila { display: contents; }
+.ranking > .vacio { grid-column: 1 / -1; }
+.rank-nombre { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+.rank-pista { height: 10px; border-radius: 999px; background: var(--muted); overflow: hidden; }
+.rank-pista i { display: block; height: 100%; border-radius: 999px; background: var(--c1); transform-origin: 0 50%; animation: g-crece-x .8s cubic-bezier(.2, .8, .2, 1) both; animation-delay: calc(var(--i) * 80ms); }
+.rank-fila b { font-variant-numeric: tabular-nums; }
+.rank-fila small { text-align: right; color: var(--muted-foreground); font-size: 11.5px; }
+.concentracion { margin-top: 10px; font-size: 12px; color: var(--muted-foreground); }
+.concentracion b { color: var(--foreground); }
+.leyenda { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 8px; font-size: 12px; color: var(--muted-foreground); }
+.leyenda i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.tip { position: absolute; pointer-events: none; z-index: 5; background: var(--navy-deep); color: var(--navy-foreground); font-size: 12px; padding: 8px 10px; border-radius: 10px; box-shadow: 0 10px 30px -10px oklch(0% 0 0 / .5); min-width: 140px; transform: translate(-50%, -100%); margin-top: -10px; }
+.tip b { display: block; margin-bottom: 4px; } .tip div { display: flex; justify-content: space-between; gap: 14px; }
+.tip i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; }
+
+/* ===== Selector de estadísticos sobre la gráfica (componentes/estadisticos.js). Todo con prefijo .est-: no toca otras tarjetas. ===== */
+.est-etq { font-size: 11.5px; font-weight: 600; color: var(--muted-foreground); text-transform: uppercase; letter-spacing: .05em; margin: 0 0 8px; }
+.est-etq span { font-weight: 500; text-transform: none; letter-spacing: 0; margin-left: 6px; }
+.est-det { margin-bottom: 10px; }
+.est-det > summary { cursor: pointer; list-style: none; display: flex; align-items: baseline; gap: 4px; padding: 2px 0; margin-bottom: 8px; }
+.est-det > summary::-webkit-details-marker { display: none; }
+.est-det > summary::before { content: "▸"; display: inline-block; width: 14px; transition: transform .15s; }
+.est-det[open] > summary::before { transform: rotate(90deg); }
+.est-det > summary:focus-visible { outline: 2px solid var(--brand-green); outline-offset: 2px; border-radius: 4px; }
+.est-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.est-chip { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--card); color: var(--foreground); border-radius: 999px; padding: 5px 12px 5px 10px; font-family: inherit; font-size: 12.5px; font-weight: 600; transition: background .15s, border-color .15s; }
+.est-chip:hover { background: var(--muted); }
+.est-chip:focus-visible { outline: 2px solid var(--brand-green); outline-offset: 2px; }
+.est-chip[aria-pressed="true"] { background: color-mix(in oklch, var(--k) 12%, var(--card)); border-color: var(--k); }
+.est-chip[aria-pressed="true"]::after { content: "✓"; color: var(--k); font-size: 11px; font-weight: 700; }
+.est-chip small { font-size: 10px; font-weight: 600; color: var(--muted-foreground); background: var(--muted); border-radius: 999px; padding: 1px 7px; }
+.est-mu { display: inline-block; width: 18px; height: 0; border-top: 3px solid var(--k); flex: none; }
+.est-mu.pun { border-top-style: dashed; }
+.est-mu.caja { height: 10px; border: 0; background: color-mix(in oklch, var(--k) 30%, transparent); border-radius: 3px; }
+.est-mu.pto { width: 10px; height: 10px; border: 2.4px solid var(--navy); border-radius: 50%; background: var(--card); }
+.est-mu.nada { border-top-color: var(--muted-foreground); border-top-style: dotted; }
+.est-cifras { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-bottom: 12px; }
+.est-cifras:empty { display: none; }
+.est-cifra { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--k, var(--brand-green)); border-radius: var(--radius-md); padding: 8px 12px; min-width: 0; }
+.est-cifra .et { font-size: 10.5px; font-weight: 600; color: var(--muted-foreground); text-transform: uppercase; letter-spacing: .05em; }
+.est-cifra .val { font-size: 18px; font-weight: 700; color: var(--navy); letter-spacing: -0.02em; }
+.est-cifra .pend { font-size: 13.5px; font-weight: 600; color: var(--muted-foreground); margin: 5px 0; }
+.est-cifra .sub { font-size: 11.5px; color: var(--muted-foreground); }
+.est-cifra .sube { color: var(--brand-green-dark); font-weight: 600; } .est-cifra .baja { color: var(--bad); font-weight: 600; } .est-cifra .igual { color: var(--muted-foreground); font-weight: 600; }
+.est-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 8px; font-size: 12.5px; }
+.est-nav-btn { border: 1px solid var(--border); background: var(--card); color: var(--foreground); border-radius: var(--radius-sm); padding: 4px 10px; font-family: inherit; font-size: 12px; line-height: 1.4; cursor: pointer; }
+.est-nav-btn:hover:not([disabled]) { background: var(--muted); }
+.est-nav-btn[disabled] { opacity: .4; cursor: default; }
+.est-nav-btn:focus-visible, .est-nav select:focus-visible { outline: 2px solid var(--brand-green); outline-offset: 2px; }
+.est-nav select { padding: 4px 8px; font-size: 12px; }
+.est-nav-rango { font-weight: 600; color: var(--navy); min-width: 150px; text-align: center; }
+.est-nav-rango small { font-weight: 500; color: var(--muted-foreground); }
+.est-nav-ayuda { margin-left: auto; font-size: 11px; color: var(--muted-foreground); }
+.est.est-navegable { outline: none; }
+.est.est-navegable:focus-visible { outline: 2px solid var(--brand-green); outline-offset: 4px; border-radius: var(--radius-md); }
+.est.est-navegable .grafica-lienzo { cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.est.est-arrastrando .grafica-lienzo { cursor: grabbing; }
+.est-notas { margin-top: 8px; font-size: 11.5px; color: var(--muted-foreground); display: flex; flex-direction: column; gap: 2px; }
+
+/* ===== Listas / alertas ===== */
+.alertas { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.alertas li { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; }
+.alertas .sev { flex: none; width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; background: var(--info); }
+.alertas .sev.bad { background: var(--bad); } .alertas .sev.warn { background: var(--warn); } .alertas .sev.ok { background: var(--ok); }
+.alertas small { display: block; color: var(--muted-foreground); font-size: 11.5px; }
+.vacio { padding: 26px 10px; text-align: center; color: var(--muted-foreground); font-size: 13px; }
+.dato-fila { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-bottom: 1px dashed var(--border); font-size: 13px; }
+.dato-fila:last-child { border-bottom: 0; }
+.dato-fila span:first-child { color: var(--muted-foreground); }
+.dato-fila b { font-weight: 600; text-align: right; }
+
+/* ===== Placeholders de etapas siguientes ===== */
+.ph { border: 1.5px dashed oklch(75% 0.04 250); background: var(--gradient-soft); border-radius: var(--radius-lg); padding: 28px 30px; }
+.ph h2 { font-size: 20px; margin: 10px 0 6px; }
+.ph p { color: var(--muted-foreground); max-width: 760px; margin: 0 0 14px; }
+.ph ul { margin: 0; padding-left: 18px; columns: 2; column-gap: 40px; font-size: 13px; }
+.ph li { margin-bottom: 6px; break-inside: avoid; }
+.ph .fuentes { margin-top: 16px; font-size: 12px; color: var(--muted-foreground); }
+.banner { background: var(--brand-green-soft); border: 1px solid oklch(85% 0.08 152); color: oklch(32% 0.09 152); border-radius: var(--radius-md); padding: 10px 14px; font-size: 12.5px; display: flex; gap: 10px; align-items: center; }
+.banner.warn { background: oklch(96% 0.05 85); border-color: oklch(85% 0.1 85); color: oklch(40% 0.1 70); }
+
+/* ===== Progreso de actualización ===== */
+.panel-act { position: fixed; right: 22px; bottom: 22px; width: 380px; max-width: calc(100vw - 44px); background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: 0 24px 60px -30px oklch(19% 0.06 258 / .55); z-index: 50; padding: 16px 18px; }
+.panel-act h4 { font-size: 14px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.panel-act ul { list-style: none; margin: 0; padding: 0; font-size: 12.5px; max-height: 260px; overflow: auto; }
+.panel-act li { display: flex; gap: 8px; padding: 4px 0; align-items: baseline; }
+.panel-act li small { color: var(--muted-foreground); margin-left: auto; }
+.girar { width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--brand-green); border-radius: 50%; animation: gira .8s linear infinite; display: inline-block; }
+@keyframes gira { to { transform: rotate(360deg); } }
+.cargando { padding: 60px; text-align: center; color: var(--muted-foreground); }
+
+/* ===== Gantt (placeholder visual de Fase 2) ===== */
+.gantt-demo { display: grid; grid-template-columns: 150px 1fr; gap: 6px 12px; font-size: 12px; opacity: .85; }
+.gantt-demo .barra-g { height: 14px; border-radius: 6px; background: var(--c3); align-self: center; }
+
+/* ===== Responsivo ===== */
+@media (max-width: 1100px) { .c3, .c4, .c5, .c6, .c7, .c8 { grid-column: span 12; } .c2 { grid-column: span 6; } }
+@media (max-width: 900px) {
+  .app { grid-template-columns: 1fr; }
+  .nav { position: fixed; z-index: 40; left: 0; width: var(--nav-w); transform: translateX(-100%); transition: transform .2s; }
+  .nav.abierto { transform: none; }
+  .barra .menu-btn { display: inline-grid; place-items: center; }
+  .barra { padding: 10px 16px; } .contenido { padding: 18px 16px 40px; }
+  .ph ul { columns: 1; }
+}
+/* ===== Impresión =====
+   Al imprimir, Chrome no avanza el reloj de las animaciones: barras, líneas, puntos y donas se quedaban en su
+   fotograma inicial (invisible). Aquí se desactivan y se dejan en su estado final. Solo aplica al imprimir. */
+/* Escritorio: el menú vive colapsado y se asoma como tarjeta flotante; con data-menu="fijo" vuelve a ser la columna fija de siempre */
+@media (min-width: 901px) {
+  .nav-fijar { display: inline-flex; }
+  html:not([data-menu="fijo"]) .app { grid-template-columns: 1fr; }
+  html:not([data-menu="fijo"]) .nav { position: fixed; z-index: 45; left: 12px; top: 76px; height: auto; max-height: calc(100vh - 92px); width: var(--nav-w); border-radius: var(--radius-xl);
+    box-shadow: 0 22px 50px -14px oklch(0% 0 0 / .55); opacity: 0; visibility: hidden; transform: translateX(-14px) scale(.98); transform-origin: top left; pointer-events: none;
+    transition: opacity .18s ease, transform .18s ease, visibility 0s .18s; }
+  html:not([data-menu="fijo"]) .nav.abierto { opacity: 1; visibility: visible; transform: none; pointer-events: auto; transition: opacity .18s ease, transform .18s ease, visibility 0s; }
+  html:not([data-menu="fijo"]) .nav .logo-vive { display: none; }  /* el logo pasa al encabezado */
+  html:not([data-menu="fijo"]) .barra .menu-btn { display: inline-grid; place-items: center; }
+  html:not([data-menu="fijo"]) .barra-logo { display: inline-flex; }
+  html:not([data-menu="fijo"]) .nav-franja { display: block; }
+  body.ios .nav-franja { display: none !important; }
+}
+@media print {
+  .nav, .barra .btn, .panel-act, .via-launcher, .via-panel, .menu-btn, #selector-tema { display: none !important; }
+  .app { display: block; }
+  .barra { position: static; }
+  /* Secciones en botones: al imprimir salen todas, sin los botones */
+  .secciones-botones { display: none !important; }
+  .secciones-panel[hidden] { display: grid !important; }
+  .secciones-panel { animation: none !important; }
+  /* Gráficas: estado final, sin animaciones */
+  .g-barra, .g-viva, .g-punto, .g-dona, .g-traza, .g-flujo, .g-onda, .rank-pista i { animation: none !important; }
+  .g-barra, .rank-pista i { transform: none !important; filter: none !important; }
+  .g-traza { stroke-dasharray: none; stroke-dashoffset: 0; }
+  .g-punto { opacity: 1; }
+  .g-onda { display: none; }          /* efecto decorativo (ondas) */
+  /* Respetar colores de barras, rankings, semáforos y chips aunque no esté marcado "Gráficos de fondo" */
+  .tarjeta, .kpi, .grafica, .dona, .ranking, .progreso, .chip, .semaforo, .banner, .barra, svg { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  /* Que una tarjeta no se parta entre dos hojas */
+  .tarjeta, .kpi { break-inside: avoid; }
+}
+
+/* ===== Modo oscuro · "marino profundo" (se activa con data-tema="oscuro" en <html>, ver componentes/tema.js) =====
+   Solo redefine tokens y los pocos colores fijos del tema claro; las páginas no cambian. */
+html[data-tema="oscuro"] {
+  color-scheme: dark;
+  --nav-bg: var(--gradient-brand-v);
+  --navy: oklch(88% 0.035 244);               /* en claro es azul marino (texto de títulos y cifras): en oscuro, azul muy claro */
+  --brand-green-dark: oklch(72% 0.17 152);
+  --brand-green-soft: oklch(30% 0.06 152);
+  --background: oklch(16% 0.045 258);
+  --foreground: oklch(95% 0.01 250);
+  --card: oklch(21% 0.05 257);
+  --surface: oklch(24% 0.055 256);
+  --muted: oklch(26% 0.05 256);
+  --muted-foreground: oklch(72% 0.035 252);
+  --border: oklch(32% 0.05 255);
+  --ok: oklch(76% 0.18 152); --warn: oklch(82% 0.15 85); --bad: oklch(70% 0.19 27); --info: oklch(72% 0.12 235);
+  --warn-txt: oklch(84% 0.12 85);
+  --gradient-brand: linear-gradient(115deg, #06403f 0%, #07475a 45%, #0a3a66 100%);
+  --gradient-brand-v: linear-gradient(180deg, #06403f 0%, #07475a 45%, #0a3a66 100%);
+  --gradient-soft: linear-gradient(180deg, oklch(21% 0.05 257) 0%, oklch(24% 0.055 257) 100%);
+  --shadow-card: 0 1px 2px oklch(0% 0 0 / .4), 0 14px 32px -22px oklch(0% 0 0 / .65);
+  --c1: oklch(76% 0.18 152); --c2: oklch(72% 0.12 244); --c3: oklch(74% 0.1 205);   /* --c2 marino no se vería sobre fondo oscuro */
+  --c4: oklch(82% 0.15 85); --c5: oklch(72% 0.17 28); --c6: oklch(70% 0.04 255);
+  --fondo-ios: oklch(14% 0.04 258);
+}
+html[data-tema="oscuro"] .nav { border-right: 1px solid oklch(100% 0 0 / .06); }
+html[data-tema="oscuro"] .secciones-boton.activo { background: var(--navy-soft); }
+html[data-tema="oscuro"] .kpi { --t: oklch(29% 0.06 152); --txt: oklch(86% 0.14 152); }
+html[data-tema="oscuro"] .kpi.warn { --t: oklch(31% 0.06 85); --txt: oklch(88% 0.12 85); }
+html[data-tema="oscuro"] .kpi.bad { --t: oklch(30% 0.07 27); --txt: oklch(86% 0.12 27); }
+html[data-tema="oscuro"] .kpi.info { --t: oklch(29% 0.05 235); --txt: oklch(86% 0.08 235); }
+html[data-tema="oscuro"] .chip.ok { background: oklch(30% 0.07 152); color: oklch(86% 0.14 152); }
+html[data-tema="oscuro"] .chip.warn { background: oklch(32% 0.07 85); color: oklch(88% 0.12 85); }
+html[data-tema="oscuro"] .chip.bad { background: oklch(31% 0.08 27); color: oklch(86% 0.12 27); }
+html[data-tema="oscuro"] .chip.info { background: oklch(30% 0.06 235); color: oklch(86% 0.08 235); }
+html[data-tema="oscuro"] .chip.fase, html[data-tema="oscuro"] .via-msg--user { background: var(--navy-soft); color: var(--navy-foreground); }
+html[data-tema="oscuro"] .banner { border-color: oklch(42% 0.09 152); color: oklch(88% 0.1 152); }
+html[data-tema="oscuro"] .banner.warn { background: oklch(30% 0.05 85); border-color: oklch(46% 0.09 85); color: oklch(88% 0.1 85); }
+html[data-tema="oscuro"] .ph { border-color: oklch(42% 0.04 250); }
+html[data-tema="oscuro"] .barra select option { background: var(--card); }
+html[data-tema="oscuro"] .tip, html[data-tema="oscuro"] .fuente-pop { background: var(--surface); border: 1px solid var(--border); color: var(--foreground); }
+html[data-tema="oscuro"] .progreso { background: var(--border); }
+/* móvil */
+html[data-tema="oscuro"] .ios-barra.con-titulo { background: oklch(18% 0.045 258 / .85); box-shadow: 0 0.5px 0 oklch(100% 0 0 / .12); }
+html[data-tema="oscuro"] .ios-cab h1 { color: var(--foreground); }
+html[data-tema="oscuro"] .segmentos { background: oklch(30% 0.04 255 / .7); }
+html[data-tema="oscuro"] .segmentos a.activo { background: var(--surface); color: var(--foreground); box-shadow: 0 2px 6px oklch(0% 0 0 / .35); }
+html[data-tema="oscuro"] .chip-periodo { color: oklch(86% 0.14 152); }
+html[data-tema="oscuro"] .ios-tabs { background: oklch(18% 0.045 258 / .88); box-shadow: 0 -0.5px 0 oklch(100% 0 0 / .12); }
+html[data-tema="oscuro"] .ios-tab { color: var(--muted-foreground); }
+html[data-tema="oscuro"] .ios-tab.activa { color: var(--brand-green); }
+html[data-tema="oscuro"] .hoja-asa { background: oklch(40% 0.03 255); }
+html[data-tema="oscuro"] .fila-ios svg { color: oklch(60% 0.03 255); }
+html[data-tema="oscuro"] body.ios .tarjeta, html[data-tema="oscuro"] body.ios .kpi { box-shadow: 0 1px 2px oklch(0% 0 0 / .35), 0 6px 20px -12px oklch(0% 0 0 / .6); }
+.hoja-tema { display: flex; align-items: center; justify-content: space-between; background: var(--card); color: var(--foreground); border-radius: 14px; padding: 10px 14px; margin-bottom: 14px; font-size: 14.5px; font-weight: 500; }
+
+/* Documentos: flashcards y video */
+.contenido:has(> .visor-procesos) { padding: 0; max-width: none; flex: 1; display: flex; }
+.visor-procesos { flex: 1; width: 100%; border: 0; display: block; background: #fff; min-height: 480px; }
+.visor-video { width: 100%; max-height: 75vh; border-radius: 8px; background: #000; }
+
+/* ===== Comité Directivo: visor tipo PowerPoint (web/paginas/comite.js) ===== */
+.contenido:has(> .ppt-pagina) { max-width: none; padding: 14px 18px 18px; flex: 1; display: flex; flex-direction: column; }
+.ppt-pagina { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+.ppt-aviso { padding: 10px 14px; display: flex; gap: 10px; align-items: center; justify-content: center; flex-wrap: wrap; }
+.ppt { flex: none; min-height: 0; height: max(560px, calc(100vh - 96px)); display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr) auto; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: var(--shadow-card); overflow: hidden; }
+.ppt-cinta { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.ppt-doc { display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 280px; }
+.ppt-doc b { display: block; font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ppt-doc > div { min-width: 0; }
+.ppt-icono { flex: none; width: 30px; height: 30px; border-radius: var(--radius-sm); display: grid; place-items: center; background: var(--gradient-brand); color: #fff; font-weight: 800; font-size: 15px; }
+.ppt-buscar { flex: 0 1 280px; min-width: 160px; padding: 7px 12px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); color: var(--foreground); font: inherit; font-size: 12.5px; }
+.ppt-buscar:focus { outline: 2px solid var(--azul); outline-offset: -1px; }
+.ppt-acciones { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.ppt-acciones a.btn { text-decoration: none; }
+.ppt-cuerpo { display: grid; grid-template-columns: 200px minmax(0, 1fr); min-height: 0; }
+/* panel de miniaturas */
+.ppt-panel { overflow-y: auto; padding: 12px 10px 12px 6px; border-right: 1px solid var(--border); background: var(--surface); }
+.ppt-mini { display: flex; align-items: flex-start; gap: 6px; width: 100%; padding: 4px; margin-bottom: 6px; border: 0; background: none; cursor: pointer; color: var(--muted-foreground); font: inherit; text-align: left; }
+.ppt-mini[hidden] { display: none; }
+.ppt-mini-num { flex: none; width: 22px; text-align: right; font-size: 11px; font-weight: 600; padding-top: 2px; }
+.ppt-mini.oculta .ppt-mini-num { text-decoration: line-through; opacity: .8; }  /* número tachado, como PowerPoint */
+.ppt-mini-img { flex: 1; display: block; border: 2px solid var(--border); border-radius: 4px; overflow: hidden; background: #fff; transition: border-color .12s; }
+.ppt-mini-img img { width: 100%; height: 100%; display: block; object-fit: contain; }
+.ppt-mini.oculta .ppt-mini-img img { opacity: .45; }
+.ppt-mini:hover .ppt-mini-img { border-color: color-mix(in oklch, var(--azul) 45%, var(--border)); }
+.ppt-mini[aria-current="true"] .ppt-mini-img { border-color: var(--azul); box-shadow: 0 0 0 1px var(--azul); }
+.ppt-mini[aria-current="true"] .ppt-mini-num { color: var(--azul); }
+.ppt-mini:focus-visible { outline: 2px solid var(--azul); outline-offset: 1px; border-radius: 6px; }
+.ppt-vacio { padding: 12px; text-align: center; }
+/* diapositiva y notas */
+.ppt-centro { display: grid; grid-template-rows: minmax(0, 1fr) auto; min-width: 0; min-height: 0; }
+.ppt-escenario { position: relative; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 20px 52px; background: var(--muted); }
+.ppt-lienzo { position: relative; height: 100%; max-width: 100%; display: flex; align-items: center; justify-content: center; }
+.ppt-diapo { display: block; max-width: 100%; max-height: 100%; min-height: 0; width: auto; height: auto; background: #fff; box-shadow: 0 2px 6px rgba(16, 40, 70, .18), 0 10px 30px rgba(16, 40, 70, .12); user-select: none; }
+.ppt-marca { position: absolute; top: 10px; left: 10px; padding: 3px 10px; border-radius: 999px; background: rgba(28, 43, 58, .82); color: #fff; font-size: 11px; font-weight: 600; }
+.ppt-flecha { position: absolute; top: 50%; translate: 0 -50%; width: 34px; height: 54px; border: 0; border-radius: var(--radius-sm); background: color-mix(in oklch, var(--card) 85%, transparent); color: var(--foreground); font-size: 28px; line-height: 1; cursor: pointer; opacity: .75; box-shadow: 0 1px 4px rgba(16, 40, 70, .15); }
+.ppt-flecha:hover:not(:disabled) { opacity: 1; color: var(--azul); }
+.ppt-flecha:disabled { opacity: .25; cursor: default; }
+.ppt-flecha.izq { left: 10px; } .ppt-flecha.der { right: 10px; }
+.ppt-notas { border-top: 1px solid var(--border); background: var(--card); display: flex; flex-direction: column; height: 150px; }
+.ppt-notas.cerrado { height: auto; }
+.ppt-notas.cerrado .ppt-notas-txt { display: none; }
+.ppt-pests { display: flex; gap: 2px; padding: 4px 10px 0; border-bottom: 1px solid var(--border); }
+.ppt-pest { border: 0; background: none; padding: 6px 10px; font: inherit; font-size: 12px; font-weight: 600; color: var(--muted-foreground); border-bottom: 2px solid transparent; cursor: pointer; }
+.ppt-pest[aria-selected="true"] { color: var(--azul); border-bottom-color: var(--azul); }
+.ppt-notas.cerrado .ppt-pest[aria-selected="true"] { color: var(--muted-foreground); border-bottom-color: transparent; }
+.ppt-plegar { margin-left: auto; font-weight: 500; }
+.ppt-notas-txt { flex: 1; overflow-y: auto; padding: 10px 16px; font-size: 13px; line-height: 1.55; white-space: pre-line; color: var(--foreground); }
+.ppt-notas-txt.vacio { color: var(--muted-foreground); font-style: italic; }
+.ppt-estado { display: flex; align-items: center; gap: 12px; padding: 6px 14px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted-foreground); background: var(--surface); min-height: 32px; }
+.ppt-detalle { display: flex; gap: 6px; flex-wrap: wrap; }
+/* modo presentación: pantalla completa en negro */
+.ppt-show { position: fixed; inset: 0; z-index: 1000; background: #000; display: flex; align-items: center; justify-content: center; cursor: none; outline: none; }
+.ppt-show.activo { cursor: default; }
+.ppt-show-img { max-width: 100vw; max-height: 100vh; width: auto; height: auto; display: block; user-select: none; }
+.ppt-show-fin { color: #ddd; font-size: 15px; }
+.ppt-show-ctrl { position: absolute; left: 18px; bottom: 16px; display: flex; align-items: center; gap: 6px; padding: 5px 8px; border-radius: 999px; background: rgba(40, 40, 40, .75); color: #eee; font-size: 12.5px; opacity: 0; transition: opacity .25s; }
+.ppt-show.activo .ppt-show-ctrl { opacity: 1; }
+.ppt-show-ctrl button { border: 0; background: none; color: #eee; font: inherit; font-size: 18px; padding: 2px 9px; border-radius: 999px; cursor: pointer; }
+.ppt-show-ctrl button.salir { font-size: 12px; }
+.ppt-show-ctrl button:hover { background: rgba(255, 255, 255, .15); }
+@media (max-width: 900px) {
+  .contenido:has(> .ppt-pagina) { padding: 10px; }
+  .ppt { height: auto; grid-template-rows: auto auto auto; }
+  .ppt-cuerpo { grid-template-columns: minmax(0, 1fr); }
+  .ppt-centro { order: -1; }
+  .ppt-panel { display: flex; gap: 6px; overflow-x: auto; overflow-y: hidden; border-right: 0; border-top: 1px solid var(--border); padding: 8px; }
+  .ppt-mini { width: 120px; flex: none; flex-direction: column; margin: 0; }
+  .ppt-mini-img { width: 100%; }
+  .ppt-escenario { padding: 10px; }
+  .ppt-centro { grid-template-columns: minmax(0, 1fr); }
+  .ppt-lienzo { width: 100%; height: auto; }
+  .ppt-diapo { width: 100%; max-height: none; }
+  .ppt-doc { flex-basis: 100%; }
+  .ppt-flecha { display: none; }
+  .ppt-buscar { flex: 1 1 100%; }
+}
+
+/* ===== Fuente de los datos: ícono ⓘ y popover (ver pieFuente en componentes/ui.js) ===== */
+.fuente-info { position: absolute; z-index: 2; width: 18px; height: 18px; padding: 0; display: grid; place-items: center; border: 1.5px solid color-mix(in oklch, var(--muted-foreground) 55%, transparent); border-radius: 50%; background: transparent; color: var(--muted-foreground); font: italic 700 11px/1 Georgia, serif; cursor: help; opacity: .75; transition: opacity .15s, color .15s, border-color .15s; }
+.fuente-info::after { content: ""; position: absolute; inset: -9px; }  /* zona táctil más grande */
+.fuente-info:hover, .fuente-info:focus-visible, .fuente-info[aria-expanded="true"] { opacity: 1; color: var(--azul); border-color: var(--azul); outline: none; }
+.kpi .fuente-info { right: 10px; bottom: 9px; }
+.tarjeta { position: relative; }
+.tarjeta > .fuente-info { top: 14px; right: 14px; }
+.tarjeta:has(> .fuente-info) .tarjeta-cab { padding-right: 26px; }
+.fuente-pop { position: fixed; z-index: 80; max-width: 320px; background: var(--navy-deep); color: var(--navy-foreground); border-radius: 10px; padding: 10px 12px; font-size: 11.5px; line-height: 1.4; box-shadow: 0 10px 30px -10px oklch(0% 0 0 / .5); pointer-events: none; }
+.fuente-pop b { display: block; margin-bottom: 4px; font-size: 10.5px; letter-spacing: .05em; text-transform: uppercase; opacity: .75; }
+.fuente-pop ul { margin: 0; padding-left: 14px; } .fuente-pop li { margin-bottom: 3px; overflow-wrap: anywhere; }
+.fuente-pop small { display: block; margin-top: 6px; opacity: .75; overflow-wrap: anywhere; }
+
+/* Dashboards ejecutivos: tarjetas "En espera" y relato de cada central */
+.espera { border: 1.5px dashed var(--border); border-radius: var(--radius-md); padding: 12px 14px; background: var(--gradient-soft); font-size: 13px; }
+.espera p { margin: 0 0 8px; color: var(--muted-foreground); }
+.espera ul { margin: 0; padding-left: 18px; }
+.espera li { margin-bottom: 4px; }
+.relato { margin: 0 0 12px; font-size: 13.5px; line-height: 1.5; }
+
+  </style>
+  <style>
+    /* Solo lo que tema.css no trae: un cuarto color de serie y el ancho del encabezado sin menú lateral */
+    :root { --c-sim: #8a63d2; }
+    html[data-tema="oscuro"] { --c-sim: #b28fef; }
+    .barra .barra-logo { display: inline-flex; }
+    .tabs a { color: inherit; }
+    .contenido { margin: 0 auto; }
+    .fila-prog + .fila-prog { margin-top: 14px; }
+    .fila-prog > span { min-width: 210px; font-size: 12.5px; }
+    .prog-marca { position: relative; }
+    .prog-marca::after { content: ""; position: absolute; top: -4px; bottom: -4px; left: var(--x); width: 2px; background: var(--foreground); border-radius: 1px; }
+    .pie { grid-column: span 12; font-size: 11.5px; color: var(--muted-foreground); line-height: 1.6; margin-top: 6px; }
+    .pie b { color: var(--foreground); font-weight: 600; }
+  </style>
+  <script>
+    (function () { var t = 'claro'; try { if (localStorage.getItem('tema') === 'oscuro') t = 'oscuro'; } catch (e) {} if (/oscuro/.test(location.hash)) t = 'oscuro'; document.documentElement.setAttribute('data-tema', t); })();
+  </script>
+</head>
+<body>
+  <div class="principal">
+    <header class="barra">
+      <a class="barra-logo" href="https://viveenergia.com/" target="_blank" rel="noopener" title="Ir a viveenergia.com"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTguNzEyIiBoZWlnaHQ9IjQzLjc2MSIgdmlld0JveD0iMCAwIDE5OC43MTIgNDMuNzYxIj4KICA8ZyBpZD0ibG9nb192aXZlX2VuZXJnaWFfd2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02NjcuNjEyIC03ODkuOTEyKSI+CiAgICA8cGF0aCBpZD0iVHJhemFkb183MjEiIGRhdGEtbmFtZT0iVHJhemFkbyA3MjEiIGQ9Ik02OTcuMDM0LDgyNy45MjlhMTMuMjQsMTMuMjQsMCwxLDEtMTMuMjQtMTMuMjRjLjQzNSwwLC44NjUuMDIyLDEuMjg5LjA2Mkw2ODYuNjc2LDgxMmExNi4xNzcsMTYuMTc3LDAsMSwwLDEzLjE4LDEzLjk1MWwtMi44NDgsMS4xMzlxLjAyNi40MTUuMDI3LjgzNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMTIuNTIxKSIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggaWQ9IlRyYXphZG9fNzIyIiBkYXRhLW5hbWU9IlRyYXphZG8gNzIyIiBkPSJNNzE5LjA1OSw3ODkuOTEycy0uMzQ2LDQuOTg5LS42NjMsNi4yNTdjMCwwLTEzLjA2Miw3Ljg3OS0xMy42OSwxOC42NzEsMCwwLC4zLTEyLjE1NCwyMC4zNTEtMjAuNTE3YTM3LjE4NSwzNy4xODUsMCwwLDEtMi44LDcuMTIycy0xNS4wODksNC43LTE3LjM1OSwxMy45NjFjMCwwLDIuOS0xMS42LDI1LjcyMS0xNC4xMDYsMCwwLTguNjIyLDE0LjA3Mi0yMi44MjMsMTUuNDg1LDAsMC0yLjQyMiwwLTIuOTg5LS43MDgsMCwwLS45OS0xLjA2NS0uMzA4LTUuNzUzLjg0MS01Ljc3NCw1LjgtMTQuMzQxLDE0LjU1OC0yMC40MTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMS4wMTYpIiBmaWxsPSIjZmZmIi8+CiAgICA8cGF0aCBpZD0iVHJhemFkb183MjMiIGRhdGEtbmFtZT0iVHJhemFkbyA3MjMiIGQ9Ik05MzQuNzg4LDgzNy44MzNhNC4wNDgsNC4wNDgsMCwwLDAtMS4wMTItMi4xMjMsMy45OSwzLjk5LDAsMCwwLTIuNzc3LS44NCw3LjE2NCw3LjE2NCwwLDAsMC0zLjAzNS45MzksMjAuMzE2LDIwLjMxNiwwLDAsMC0zLjUzMSwyLjgxN2wuNjgyLTMuMzUyaC0yLjlsLTMuMjM5LDE2aDIuODk1bDIuMDcyLTEwLjE1OGEyMC4yNSwyMC4yNSwwLDAsMSwxLjgtMS42MTEsMTMuNTE0LDEzLjUxNCwwLDAsMSwxLjU2Ni0xLjA3Myw1LjU1OCw1LjU1OCwwLDAsMSwxLjI1NC0uNTQ4LDQuMDczLDQuMDczLDAsMCwxLDEuMDc3LS4xNTYsMi4wOTMsMi4wOTMsMCwwLDEsMS4zODUuMzY1LDEuNjg5LDEuNjg5LDAsMCwxLC41MzgsMSw0LjU2Nyw0LjU2NywwLDAsMS0uMDE3LDEuNTcxYy0uMTA2LjYzLS4yMjQsMS4yNjEtLjM1LDEuODc3bC0xLjc4Niw4LjczN2gzLjA1NmwxLjg0My04Ljk4NWMuMTMxLS42LjI1Mi0xLjI4OC4zNi0yLjA1NWE4LjI5NCw4LjI5NCwwLDAsMCwuMTE5LTIuNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE0NC4xNDEgLTI1Ljc4MSkiIGZpbGw9IiNmZmYiLz4KICAgIDxwYXRoIGlkPSJUcmF6YWRvXzcyNCIgZGF0YS1uYW1lPSJUcmF6YWRvIDcyNCIgZD0iTTEwMDYuNyw4MzQuOTI2bDEuNTI3LS4wNC0uNDMzLDEuNjY3Yy0uMDc3LjMzMi0uMTYxLjY1NC0uMjQ5Ljk2M2wtLjEuMzQ4YTMuNzg3LDMuNzg3LDAsMCwwLTMuNTUyLjgsMjQuNjExLDI0LjYxMSwwLDAsMC0zLjA4LDMuM2wtMS45LDkuMjg3aC0zLjA0MWwzLjMwNi0xNS45NTRoMi44ODFsLS44NzksNC4xODYuMDM3LS4wNDRjLjQ1Ni0uNTQ2LDEuNjM5LTIuMjE1LDIuMTY1LTIuNjc0YTYuMzgsNi4zOCwwLDAsMSwzLjMyMi0xLjg0NCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE4OC4yMjggLTI1Ljc4OSkiIGZpbGw9IiNmZmYiLz4KICAgIDxwYXRoIGlkPSJUcmF6YWRvXzcyNSIgZGF0YS1uYW1lPSJUcmF6YWRvIDcyNSIgZD0iTTEwMjIuMzQ0LDg1OC42MDdhMTAuMDQsMTAuMDQsMCwwLDAsMi4yNTQuNywxMy44MTksMTMuODE5LDAsMCwwLDQuODc5LS4wMjgsOC43MjQsOC43MjQsMCwwLDAsMi43MTYtMS4wMzMsNy45NjUsNy45NjUsMCwwLDAsMi4zNTItMi4wODksOC44LDguOCwwLDAsMCwxLjY4OC0zLjYxM2wzLjI3Mi0xNi41MmExMy4wNjYsMTMuMDY2LDAsMCwwLTUuNi0xLjA0LDExLjMyMSwxMS4zMjEsMCwwLDAtMy43LjYsMTAuODY2LDEwLjg2NiwwLDAsMC0zLjExLDEuNjY4LDkuOTIxLDkuOTIxLDAsMCwwLTIuMTY5LDIuNTY5LDkuMDIyLDkuMDIyLDAsMCwwLTEuMywzLjIsMTEuMDA4LDExLjAwOCwwLDAsMC0uMiwyLjk2LDguNDA4LDguNDA4LDAsMCwwLC41MTUsMi44ODYsNC45NzYsNC45NzYsMCwwLDAsMS41NiwyLjAzNSw0LjY0Miw0LjY0MiwwLDAsMCwyLjcyMy43OCw3LjcwNyw3LjcwNywwLDAsMCwzLjM1My0xLjIxNCwxNS4xMTQsMTUuMTE0LDAsMCwwLDIuMzU2LTEuOTE4bC0uNTQyLDMuNDYzYTkuMyw5LjMsMCwwLDEtLjg3MiwyLjZzLTIuMjg3LDQuNzMyLTkuNC44ODZabTQuMTY1LTEzLjM4M2E4LjAzNiw4LjAzNiwwLDAsMSwuMi0yLjEzNSw4LjIxOCw4LjIxOCwwLDAsMSwuODYzLTIuMjgsNi4xNzgsNi4xNzgsMCwwLDEsMS4xOC0xLjc4MSw3LjMyNiw3LjMyNiwwLDAsMSwyLTEuMzI3LDYuNTU2LDYuNTU2LDAsMCwxLDIuMzE0LS40LDUuNzQ4LDUuNzQ4LDAsMCwxLDEuNDU2LjIxNSw0LjYxMSw0LjYxMSwwLDAsMSwxLjA0OC40NTksMS42MjYsMS42MjYsMCwwLDEsLjQ3OS4zMDlsLjAxMy4wMTQtMS41MzIsNy44MDdhMTUuMjI4LDE1LjIyOCwwLDAsMS0yLjgsMi4yNDIsNC4xNzQsNC4xNzQsMCwwLDEtMi4xOC42OWMtMy4xMjUtLjE0NS0zLjA0LTMuODEyLTMuMDQtMy44MTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMDMuNDEzIC0yNS44MzkpIiBmaWxsPSIjZmZmIi8+CiAgICA8cGF0aCBpZD0iVHJhemFkb183MjYiIGRhdGEtbmFtZT0iVHJhemFkbyA3MjYiIGQ9Ik0xMDc5LjI3Niw4MTYuNzVsLTQuNzA4LDUuNDgyaC0yLjM1NGwzLjg2OC01LjQ4MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMzIuMDA5IC0xNS4zOSkiIGZpbGw9IiNmZmYiLz4KICAgIDxwYXRoIGlkPSJUcmF6YWRvXzcyNyIgZGF0YS1uYW1lPSJUcmF6YWRvIDcyNyIgZD0iTTEwNjQuMzA2LDg1MS4xNTNoMy4wMzRsMy4zNTItMTYuNDQ3aC0zLjAzNFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMjcuNDc0IC0yNS42ODYpIiBmaWxsPSIjZmZmIi8+CiAgICA8cGF0aCBpZD0iVHJhemFkb183MjgiIGRhdGEtbmFtZT0iVHJhemFkbyA3MjgiIGQ9Ik0xMDk4LjUsODM1LjkzNmExMS40NzUsMTEuNDc1LDAsMCwwLTIuMy0uNzIzLDEyLjQzNSwxMi40MzUsMCwwLDAtMi45LS4yNCwxMS4zMDcsMTEuMzA3LDAsMCwwLTMuNzEuNiwxMC45ODQsMTAuOTg0LDAsMCwwLTMuMTE1LDEuNzQ2LDkuNDY4LDkuNDY4LDAsMCwwLTIuMTgyLDIuNDgsOC43MDYsOC43MDYsMCwwLDAtMS4yNywzLjA5NCwxMC40ODQsMTAuNDg0LDAsMCwwLS4zLDIuOTc1LDguMzMsOC4zMywwLDAsMCwuNTIxLDIuODU5LDUuNTIyLDUuNTIyLDAsMCwwLDEuNjgxLDIuMjU5YzEuNTQ5LDEuMDg4LDMuNDUyLDEuMDEyLDUuODkxLS40MTZhMjcuODUxLDI3Ljg1MSwwLDAsMCwyLjYtMi4xbC0uNTk1LDIuODQxaDIuOTQxbDMuMTEyLTE1LjIxMVptLTQuNTU4LDkuOTNzLTIuOTM2LDMuMzkyLTUuMTU3LDMuMDk1LTIuODU2LTIuMzQxLTIuOC0zLjk4Ny40NTYtNS41NzQsMy44MDktNy4yYzAsMCwzLjM5Mi0xLjQ0OSw1LjU3NC41NTVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjM4LjAyOCAtMjUuODQpIiBmaWxsPSIjZmZmIi8+CiAgICA8cGF0aCBpZD0iVHJhemFkb183MjkiIGRhdGEtbmFtZT0iVHJhemFkbyA3MjkiIGQ9Ik0xMTI2Ljk0OCw4NDAuNTM3di0xLjg2OWguNzk0YTEuMzU4LDEuMzU4LDAsMCwxLC40MzYuMDUxLjQyOC40MjgsMCwwLDEsLjIxNy4xNzkuNTM1LjUzNSwwLDAsMSwuMDgxLjI5NC41LjUsMCwwLDEtLjEyMy4zNDcuNTkzLjU5MywwLDAsMS0uMzcuMTczLjg3Ny44NzcsMCwwLDEsLjIuMTU3LDIuMTExLDIuMTExLDAsMCwxLC4yMTUuM2wuMjI5LjM2NWgtLjQ1MWwtLjI3My0uNDA3YTIuNTQ1LDIuNTQ1LDAsMCwwLS4yLS4yNzUuMjkxLjI5MSwwLDAsMC0uMTEzLS4wNzguNjI0LjYyNCwwLDAsMC0uMTktLjAyMWgtLjA3NnYuNzhabS4zNzgtMS4wNzloLjI3OWExLjQ2LDEuNDYsMCwwLDAsLjMzOS0uMDIzLjIuMiwwLDAsMCwuMTA2LS4wNzkuMjQ2LjI0NiwwLDAsMCwuMDM5LS4xNDEuMjIyLjIyMiwwLDAsMC0uMDUxLS4xNTIuMjMyLjIzMiwwLDAsMC0uMTQyLS4wNzNjLS4wMywwLS4xMjMtLjAwNi0uMjc2LS4wMDZoLS4yOTRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjYzLjM5NSAtMjcuOTU4KSIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggaWQ9IlRyYXphZG9fNzMwIiBkYXRhLW5hbWU9IlRyYXphZG8gNzMwIiBkPSJNMTEyNi4zMjEsODQwLjE5NGExLjkzMiwxLjkzMiwwLDEsMSwxLjkzMS0xLjkzMiwxLjkzMywxLjkzMywwLDAsMS0xLjkzMSwxLjkzMm0wLTMuMzg3YTEuNDU1LDEuNDU1LDAsMSwwLDEuNDU1LDEuNDU1LDEuNDU3LDEuNDU3LDAsMCwwLTEuNDU1LTEuNDU1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjYxLjkyOCAtMjYuNjE4KSIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggaWQ9IlRyYXphZG9fNzMxIiBkYXRhLW5hbWU9IlRyYXphZG8gNzMxIiBkPSJNNzY1LjgzMSw4MzkuMjM3bDEuMjUyLTIuMjY4YTEuOTYzLDEuOTYzLDAsMCwxLDEuNzE3LTEuMDE0aDIuMDQ4bC0yLjYzMSw0LjQ4M3EtLjgzNCwxLjQ0Mi0xLjc1LDIuOTg2dC0xLjgsMy4wMzJjLS41ODkuOTk1LTEuMTczLDEuOTYzLTEuNzM3LDIuODc4cy0xLjA4NywxLjc1Ni0xLjU1OCwyLjUwNmwtLjExNy4wNDJINzU4LjZsLTIuNzE3LTE1LjkyN2gzLjFsMS45NDUsMTMuMjgyczMuMDA5LTYuNTM4LDQuOS0xMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTUwLjYxNiAtMjYuNDAzKSIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggaWQ9IlRyYXphZG9fNzMyIiBkYXRhLW5hbWU9IlRyYXphZG8gNzMyIiBkPSJNODIyLjA1NSw4MzkuMjM3bDEuMjUyLTIuMjY4YTEuOTY0LDEuOTY0LDAsMCwxLDEuNzE4LTEuMDE0aDIuMDQ4bC0yLjYzLDQuNDgzcS0uODM0LDEuNDQyLTEuNzUsMi45ODZ0LTEuOCwzLjAzMmMtLjU4OS45OTUtMS4xNzMsMS45NjMtMS43MzcsMi44NzhzLTEuMDg4LDEuNzU2LTEuNTU4LDIuNTA2bC0uMTE3LjA0MmgtMi42NjJsLTIuNzE2LTE1LjkyN2gzLjFsMS45NDUsMTMuMjgyczMuMDA5LTYuNTM4LDQuOS0xMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTgyLjg1NiAtMjYuNDAzKSIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggaWQ9IlRyYXphZG9fNzMzIiBkYXRhLW5hbWU9IlRyYXphZG8gNzMzIiBkPSJNNzkwLjIsODUxLjg4M2gzLjAzNGwzLjM1Mi0xNS45MjdoLTMuMDM0WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwLjI5MyAtMjYuNDAzKSIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggaWQ9IlRyYXphZG9fNzM0IiBkYXRhLW5hbWU9IlRyYXphZG8gNzM0IiBkPSJNODAyLjc2LDgyMC40MjhhMi4wMzksMi4wMzksMCwxLDEtMi4wMzktMi4wMzgsMi4wMzksMi4wMzksMCwwLDEsMi4wMzksMi4wMzgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03NS4xNTkgLTE2LjMzKSIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggaWQ9IlRyYXphZG9fNzM1IiBkYXRhLW5hbWU9IlRyYXphZG8gNzM1IiBkPSJNODk0LjUwOCw4NDIuODM5YTQuMDQzLDQuMDQzLDAsMCwwLDIuNjM1LTQuODQ3Yy0uNzA2LTMuMTM4LTQuNDU3LTIuOTkxLTQuNDU3LTIuOTkxYTguMzg0LDguMzg0LDAsMCwwLTMuNDYxLjcsOS41NDUsOS41NDUsMCwwLDAtMi43MzgsMS44NDMsMTAuMjA5LDEwLjIwOSwwLDAsMC0xLjk0OCwyLjYsMTEuMzMxLDExLjMzMSwwLDAsMC0xLjA3MywyLjk2OSwxMS4wNzQsMTEuMDc0LDAsMCwwLS4xODksMy4yNjYsNi45NDUsNi45NDUsMCwwLDAsLjgzOSwyLjc0Myw1LjAzOCw1LjAzOCwwLDAsMCwxLjkxOSwxLjkxNCw1Ljg3Niw1Ljg3NiwwLDAsMCwyLjkzNy42OTMsOC4yNTksOC4yNTksMCwwLDAsMy42NTctLjg1OSwxMi40MzMsMTIuNDMzLDAsMCwwLDIuODA2LTEuNzYxbC4xNDctLjEzOS4yNDUtMi4xOTQtLjIzNy4xODhhMTYuMDYsMTYuMDYsMCwwLDEtMi43MzksMS42OSw2Ljc4NSw2Ljc4NSwwLDAsMS0yLjg3Ny41ODMsMy41NzIsMy41NzIsMCwwLDEtMi4wMDctLjYxMywzLjQxMywzLjQxMywwLDAsMS0xLjEyNS0xLjMzNyw0LjE2Niw0LjE2NiwwLDAsMS0uNDMtMS42OTEsMTEuMjI2LDExLjIyNiwwLDAsMSwuMDQ3LTEuNjgxYzUuNzczLjExLDguMDQ4LTEuMDgyLDguMDQ4LTEuMDgybS00LjkxLTUuMDY3YTQuNDg0LDQuNDg0LDAsMCwxLDMuNjEtLjI3OCwyLjE0MywyLjE0MywwLDAsMSwuNzM3LDMuMTVjLTEuMzA3LDEuOTEtNy4xNTIsMS41LTcuMTUyLDEuNWE1LjkzNCw1LjkzNCwwLDAsMSwyLjgtNC4zNzciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMjMuNjQxIC0yNS44NTQpIiBmaWxsPSIjZmZmIi8+CiAgICA8cGF0aCBpZD0iVHJhemFkb183MzYiIGRhdGEtbmFtZT0iVHJhemFkbyA3MzYiIGQ9Ik05NzEuNDY5LDg0Mi44MzlhNC4wNDIsNC4wNDIsMCwwLDAsMi42MzUtNC44NDdjLS43MDYtMy4xMzgtNC40NTYtMi45OTEtNC40NTYtMi45OTFhOC4zODQsOC4zODQsMCwwLDAtMy40NjEuNyw5LjUzNiw5LjUzNiwwLDAsMC0yLjczOCwxLjg0MywxMC4yLDEwLjIsMCwwLDAtMS45NDgsMi42LDExLjMsMTEuMywwLDAsMC0xLjA3MywyLjk2OSwxMS4wNzEsMTEuMDcxLDAsMCwwLS4xODksMy4yNjYsNi45NTcsNi45NTcsMCwwLDAsLjgzOSwyLjc0M0E1LjA1LDUuMDUsMCwwLDAsOTYzLDg1MS4wNGE1Ljg3OSw1Ljg3OSwwLDAsMCwyLjkzNy42OTMsOC4yNiw4LjI2LDAsMCwwLDMuNjU3LS44NTksMTIuNDI3LDEyLjQyNywwLDAsMCwyLjgwNS0xLjc2MWwuMTQ4LS4xMzkuMjQ1LTIuMTk0LS4yMzcuMTg4YTE2LjEsMTYuMSwwLDAsMS0yLjczOSwxLjY5LDYuNzg1LDYuNzg1LDAsMCwxLTIuODc3LjU4MywzLjU3MSwzLjU3MSwwLDAsMS0yLjAwNy0uNjEzLDMuNDA3LDMuNDA3LDAsMCwxLTEuMTI1LTEuMzM3LDQuMTUxLDQuMTUxLDAsMCwxLS40MzEtMS42OTEsMTEuMTIsMTEuMTIsMCwwLDEsLjA0Ny0xLjY4MWM1Ljc3Mi4xMSw4LjA0Ny0xLjA4Miw4LjA0Ny0xLjA4Mm0tNC45MDktNS4wNjdhNC40ODIsNC40ODIsMCwwLDEsMy42MDktLjI3OCwyLjE0MywyLjE0MywwLDAsMSwuNzM4LDMuMTVjLTEuMzA3LDEuOTEtNy4xNTIsMS41LTcuMTUyLDEuNWE1LjkzMyw1LjkzMywwLDAsMSwyLjgwNi00LjM3NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2Ny43NzIgLTI1Ljg1NCkiIGZpbGw9IiNmZmYiLz4KICAgIDxwYXRoIGlkPSJUcmF6YWRvXzczNyIgZGF0YS1uYW1lPSJUcmF6YWRvIDczNyIgZD0iTTg1Ny42NzYsODQyLjgzOWE0LjA0Miw0LjA0MiwwLDAsMCwyLjYzNS00Ljg0N2MtLjcwNi0zLjEzOC00LjQ1Ni0yLjk5MS00LjQ1Ni0yLjk5MWE4LjM4Niw4LjM4NiwwLDAsMC0zLjQ2MS43LDkuNTMyLDkuNTMyLDAsMCwwLTIuNzM3LDEuODQzLDEwLjIsMTAuMiwwLDAsMC0xLjk0OSwyLjYsMTEuMzMsMTEuMzMsMCwwLDAtMS4wNzMsMi45NjksMTEuMDQ1LDExLjA0NSwwLDAsMC0uMTg4LDMuMjY2LDYuOTI5LDYuOTI5LDAsMCwwLC44MzksMi43NDMsNS4wNCw1LjA0LDAsMCwwLDEuOTE5LDEuOTE0LDUuODc5LDUuODc5LDAsMCwwLDIuOTM3LjY5Myw4LjI1OCw4LjI1OCwwLDAsMCwzLjY1Ny0uODU5LDEyLjQyMywxMi40MjMsMCwwLDAsMi44MDUtMS43NjFsLjE0OC0uMTM5LjI0NS0yLjE5NC0uMjM4LjE4OGExNi4wNzMsMTYuMDczLDAsMCwxLTIuNzM5LDEuNjksNi43ODQsNi43ODQsMCwwLDEtMi44NzYuNTgzLDMuNTczLDMuNTczLDAsMCwxLTIuMDA3LS42MTMsMy40MDcsMy40MDcsMCwwLDEtMS4xMjUtMS4zMzcsNC4xMzgsNC4xMzgsMCwwLDEtLjQzLTEuNjkxLDExLjE1NCwxMS4xNTQsMCwwLDEsLjA0Ny0xLjY4MWM1Ljc3Mi4xMSw4LjA0Ny0xLjA4Miw4LjA0Ny0xLjA4Mm0tNC45MDktNS4wNjdhNC40ODMsNC40ODMsMCwwLDEsMy42MDktLjI3OCwyLjE0MywyLjE0MywwLDAsMSwuNzM3LDMuMTVjLTEuMzA3LDEuOTEtNy4xNTEsMS41LTcuMTUxLDEuNWE1LjkzNSw1LjkzNSwwLDAsMSwyLjgwNS00LjM3NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwMi41MjEgLTI1Ljg1NCkiIGZpbGw9IiNmZmYiLz4KICA8L2c+Cjwvc3ZnPgo=" alt="Vive Energía"></a>
+      <h1>Tablero ejecutivo TRACKIO<span class="sub">Dirección General · ¿Cómo va Trackio?</span></h1>
+      <nav class="tabs" aria-label="Vista"><a href="#" class="activo">Mes</a><a href="#">Acumulado 2026</a></nav>
+      <select aria-label="Periodo"><option>Octubre 2026</option><option>Septiembre 2026</option><option>Agosto 2026</option></select>
+      <div class="datos-al">Datos al: <b>31-oct-2026</b><br>cierre mensual</div>
+      <span id="selector-tema" style="display:contents"></span>
+      <span class="usuario">Propuesta</span>
+    </header>
+
+    <main class="contenido">
+      <div class="rejilla" id="rejilla">
+
+        <div class="banner warn c12" role="note">
+          <span aria-hidden="true">⚠</span>
+          <span><b>Maqueta para revisión.</b> Cifras ilustrativas reconstruidas con los documentos de la carpeta VE TRACKIO (presupuesto 2026, actualización INPC de GIM, convenio de Avomex, propuestas y Master Pricing). Validar contra la facturación real. Costos de Sysmantec y de SIM al proveedor: pendientes.</span>
+        </div>
+
+        <!-- ===== KPI (estructura .kpi de tema.css: título, valor, detalle, variación, meta) ===== -->
+        <div class="kpis">
+          <div class="kpi estado bad">
+            <div class="et" title="Facturación acumulada 2026">Facturación acumulada 2026</div>
+            <div class="val">$2.30 M</div>
+            <div class="sub">ene–oct · 69.6 % del presupuesto ($3.31 M)</div>
+            <div class="delta baja-mal">▼ $1.00 M vs presupuesto</div>
+            <div class="meta">Meta: ≥ 95 % del presupuesto acumulado</div>
+            <button class="fuente-info" type="button" aria-label="Ver la fuente de los datos" data-fuente="Facturado sin IVA vs. presupuesto 2026|0. TRACKIO_Presupuesto Ingresos 2026_Simplificado.xlsx|2. Presupuesto Ejercido TRACKIO_06_2026.xlsx">i</button>
+          </div>
+          <div class="kpi estado warn">
+            <div class="et" title="Ingreso recurrente mensual">Ingreso recurrente mensual</div>
+            <div class="val">$151.2 k</div>
+            <div class="sub">oct-26 · licencia propia: 0 %</div>
+            <div class="delta neutro">— 0.0 % vs sep-26</div>
+            <div class="meta">Meta: el % de licencia propia sube cada mes</div>
+            <button class="fuente-info" type="button" aria-label="Ver la fuente de los datos" data-fuente="Licencia + SIM + servicios recurrentes en contratos de Vive|Actualización Anual INPC GIM.xlsx|1er Convenio Modificatorio Avomex|TRACKIO_Master_Pricing.md §12">i</button>
+          </div>
+          <div class="kpi estado warn">
+            <div class="et" title="Resultado operativo (parcial)">Resultado operativo (parcial)</div>
+            <div class="val">$57.6 k</div>
+            <div class="sub">oct-26 · sin Sysmantec ni costo de SIM</div>
+            <div class="delta neutro">Margen parcial 38 %</div>
+            <div class="meta">Meta: margen positivo después del costo de equipo</div>
+            <button class="fuente-info" type="button" aria-label="Ver la fuente de los datos" data-fuente="Ingresos − costos directos|TRACKIO_Master_Pricing.md §7 (infraestructura y equipo)|Propuesta MQTT Vera Strata (soporte)|Pendiente: Control de Pagos (Sysmantec, SIM)">i</button>
+          </div>
+          <div class="kpi estado bad">
+            <div class="et" title="Meta 2026">Meta 2026</div>
+            <div class="val">0 de 5</div>
+            <div class="sub">clientes nuevos · adicional $0.95 M de $3.0 M</div>
+            <div class="delta baja-mal">32 % de la meta con 83 % del año</div>
+            <div class="meta">Meta: 5 clientes y +$3.0 M en 2026</div>
+            <button class="fuente-info" type="button" aria-label="Ver la fuente de los datos" data-fuente="Clientes por venta propia y facturación adicional|negocio.md §6 y §8|plan_90_dias.xlsx">i</button>
+          </div>
+          <div class="kpi estado bad">
+            <div class="et" title="Pipeline ponderado">Pipeline ponderado</div>
+            <div class="val">$0.61 M</div>
+            <div class="sub">2 activas · 2 sin avance &gt; 60 días</div>
+            <div class="delta baja-mal">Cubre 30 % del faltante ($2.05 M)</div>
+            <div class="meta">Meta: pipeline ponderado ≥ faltante de la meta</div>
+            <button class="fuente-info" type="button" aria-label="Ver la fuente de los datos" data-fuente="Σ (CAPEX + 12 meses de recurrente) × probabilidad por etapa|Propuestas Frexport, Lodemo Red, Avomex, Lyncott|TRACKIO_Master_Pricing.md">i</button>
+          </div>
+        </div>
+
+        <!-- ===== Sección 1 ===== -->
+        <div class="seccion-titulo"><h2>Facturación</h2><span>Último mes con datos: oct 2026 · MXN sin IVA</span></div>
+        <div class="tarjeta c6">
+          <div class="tarjeta-cab"><div><h3>Facturación acumulada: real vs. presupuesto</h3><div class="nota">oct 2026: 69.6 % del presupuesto acumulado</div></div></div>
+          <div class="grafica" id="g-acum"></div>
+          <div class="leyenda"><span><i style="background:var(--c2)"></i>Real</span><span><i style="background:var(--c6)"></i>Presupuesto (punteada)</span></div>
+          <div class="est-notas"><span>El salto de febrero es la liquidación de la instalación de Avomex ($842 k).</span><span>Desde julio el presupuesto asume clientes nuevos que no se han cerrado.</span></div>
+          <button class="fuente-info" type="button" aria-label="Ver la fuente de los datos" data-fuente="Facturación real vs. presupuesto|0. TRACKIO_Presupuesto Ingresos 2026_Simplificado.xlsx">i</button>
+        </div>
+        <div class="tarjeta c6">
+          <div class="tarjeta-cab"><div><h3>Composición mensual de la facturación</h3><div class="nota">Qué parte de lo facturado es negocio propio de Trackio</div></div>
+            <div class="acc"><button class="btn btn-linea btn-chico" type="button" id="btn-tabla">Ver tabla</button></div></div>
+          <div class="grafica" id="g-comp"></div>
+          <div class="tabla-caja oculto" id="t-comp"></div>
+          <div class="leyenda" id="ley-comp"></div>
+          <div class="est-notas"><span>Licencia de plataforma = $0 en todos los meses: ningún cliente la paga todavía.</span></div>
+        </div>
+
+        <!-- ===== Sección 2 ===== -->
+        <div class="seccion-titulo"><h2>Ingreso recurrente</h2><span>oct 2026 · $151.2 k al mes</span></div>
+        <div class="tarjeta c6">
+          <div class="tarjeta-cab"><div><h3>Recurrente por origen</h3><div class="nota">Qué sostiene el ingreso que se repite cada mes</div></div></div>
+          <div class="ranking" id="rk-rec"></div>
+          <div class="concentracion">Concentración: <b>GIM aporta el 82 %</b> del recurrente, dentro de un contrato de Vive.</div>
+        </div>
+        <div class="tarjeta c6">
+          <div class="tarjeta-cab"><div><h3>Licencia propia: de 0 % al primer cobro</h3><div class="nota">Hito inmediato: ampliación de Avomex con licencia explícita</div></div></div>
+          <div class="fila-prog"><span>Licencia cobrada / recurrente</span><div class="progreso bad"><i style="width:0%"></i></div><b>0 %</b></div>
+          <div class="tabla-caja" style="margin-top:14px">
+            <table class="tabla">
+              <thead><tr><th>Escenario</th><th class="der">Licencia/mes</th><th class="der">% del recurrente</th></tr></thead>
+              <tbody>
+                <tr><td>Hoy</td><td class="der">$0</td><td class="der">0 %</td></tr>
+                <tr><td>+ Licencia Avomex (110 pts)</td><td class="der">$32,450</td><td class="der">17.7 %</td></tr>
+                <tr><td>+ Frexport (64 pts)</td><td class="der">$58,150</td><td class="der">27.2 %</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tabla-pie">Tabulador vigente (TRACKIO_Master_Pricing.md). Se suman licencia y SIM nuevas (Frexport: 9 SIM × $500).</div>
+        </div>
+
+        <!-- ===== Sección 3 ===== -->
+        <div class="seccion-titulo"><h2>Resultado</h2><span>oct 2026 · ingresos − costos directos</span></div>
+        <div class="tarjeta c8">
+          <div class="tarjeta-cab"><div><h3>Estado de resultados simplificado de Trackio</h3><div class="nota">Parcial: faltan dos costos para el resultado completo</div></div></div>
+          <div class="tabla-caja">
+            <table class="tabla">
+              <thead><tr><th>Concepto</th><th>Fuente</th><th class="der">MXN / mes</th></tr></thead>
+              <tbody>
+                <tr><td><b>Ingresos del mes</b></td><td>Facturación oct-26</td><td class="der"><b>$151,164</b></td></tr>
+                <tr><td>Infraestructura (AWS, MongoDB Atlas, Power BI)</td><td>Master Pricing §7</td><td class="der">−$15,519</td></tr>
+                <tr><td>Soporte IA y MQTT (Vera Strata)</td><td>Propuesta MQTT oct-25</td><td class="der">−$3,000</td></tr>
+                <tr><td>Equipo asignado (2 personas)</td><td>Master Pricing §7, escenario B</td><td class="der">−$75,075</td></tr>
+                <tr><td>Desarrollo de plataforma (Sysmantec)</td><td>Control de Pagos</td><td class="der"><span class="chip warn">Pendiente</span></td></tr>
+                <tr><td>Comunicación SIM pagada al proveedor</td><td>Control de Pagos</td><td class="der"><span class="chip warn">Pendiente</span></td></tr>
+                <tr><td><b>Resultado parcial</b></td><td><b>Margen parcial 38 %</b></td><td class="der"><b>$57,570</b></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tarjeta c4">
+          <div class="tarjeta-cab"><div><h3>Lectura</h3><div class="nota">Qué falta para el resultado completo</div></div></div>
+          <div class="dato-fila"><span>Infraestructura cubierta</span><b>Sí · 10 % del ingreso</b></div>
+          <div class="dato-fila"><span>Equipo cubierto</span><b>Sí, antes de Sysmantec</b></div>
+          <div class="dato-fila"><span>Puntos activos vs. break-even</span><b>130 de 267</b></div>
+          <div class="dato-fila"><span>Costos por confirmar</span><b>Sysmantec · SIM</b></div>
+        </div>
+
+        <!-- ===== Sección 4 ===== -->
+        <div class="seccion-titulo"><h2>Meta 2026</h2><span>Meta aprobada: 5 clientes nuevos y +$3.0 M</span></div>
+        <div class="tarjeta c6">
+          <div class="tarjeta-cab"><div><h3>Progreso vs. año transcurrido</h3><div class="nota">La marca vertical indica cuánto del año ya pasó (83 % al 31-oct)</div></div></div>
+          <div class="fila-prog"><span>Clientes nuevos por venta propia</span><div class="progreso bad prog-marca" style="--x:83%;overflow:visible"><i style="width:0%"></i></div><b>0 de 5</b></div>
+          <div class="fila-prog"><span>Facturación adicional</span><div class="progreso bad prog-marca" style="--x:83%;overflow:visible"><i style="width:31.7%"></i></div><b>32 %</b></div>
+          <div class="tabla-pie"><span class="semaforo bad"></span>Ambos indicadores van por debajo del ritmo del año.</div>
+        </div>
+        <div class="tarjeta c6">
+          <div class="tarjeta-cab"><div><h3>Origen de lo adicional</h3><div class="nota">Decisión estratégica: Trackio debe venderse en mercado abierto</div></div></div>
+          <div class="tabla-caja">
+            <table class="tabla">
+              <thead><tr><th>Origen</th><th class="der">Clientes</th><th class="der">Facturación adicional</th></tr></thead>
+              <tbody>
+                <tr><td>Mercado abierto (correo en frío, referidos, LinkedIn)</td><td class="der">0</td><td class="der">$0</td></tr>
+                <tr><td>Canal interno de Vive (instalación y SIM de Avomex)</td><td class="der">0</td><td class="der">$951,612</td></tr>
+                <tr><td><b>Total</b></td><td class="der"><b>0</b></td><td class="der"><b>$951,612</b></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ===== Sección 5 ===== -->
+        <div class="seccion-titulo"><h2>Pipeline</h2><span>Valor = CAPEX + 12 meses de recurrente · MXN sin IVA</span></div>
+        <div class="tarjeta c12">
+          <div class="tarjeta-cab"><div><h3>Oportunidades abiertas</h3><div class="nota">Probabilidad por etapa: reunión 10 % · levantamiento 25 % · propuesta 40 % · negociación 70 %</div></div></div>
+          <div class="tabla-caja">
+            <table class="tabla">
+              <thead><tr><th>Oportunidad</th><th>Etapa</th><th class="der">Valor</th><th class="der">Prob.</th><th class="der">Ponderado</th><th>Estado</th></tr></thead>
+              <tbody>
+                <tr><td><b>Ampliación Avomex</b> (transformadores + licencia)</td><td><span class="chip">Propuesta</span></td><td class="der">$1,200,421</td><td class="der">40 %</td><td class="der">$480,168</td><td><span class="chip ok">Activa</span></td></tr>
+                <tr><td><b>Lyncott</b> (19 puntos, licencia)</td><td><span class="chip">Negociación</span></td><td class="der">$188,400</td><td class="der">70 %</td><td class="der">$131,880</td><td><span class="chip ok">Activa</span></td></tr>
+                <tr class="inactivo"><td><b>Frexport · Grupo Altex</b> (64 puntos)</td><td><span class="chip">Propuesta</span></td><td class="der">$1,442,428</td><td class="der">40 %</td><td class="der">$576,971</td><td><span class="chip bad">&gt; 60 días sin avance</span></td></tr>
+                <tr class="inactivo"><td><b>Lodemo Red</b> (6 servicios)</td><td><span class="chip">Propuesta</span></td><td class="der">$295,950</td><td class="der">40 %</td><td class="der">$118,380</td><td><span class="chip bad">&gt; 60 días sin avance</span></td></tr>
+                <tr class="inactivo"><td><b>Romamills</b></td><td><span class="chip">Reunión</span></td><td class="der">Por dimensionar</td><td class="der">10 %</td><td class="der">—</td><td><span class="chip warn">Sin valor</span></td></tr>
+                <tr><td colspan="4"><b>Pipeline ponderado (solo activas)</b></td><td class="der"><b>$612,048</b></td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tabla-pie">Si Frexport y Lodemo Red se reactivan, el pipeline ponderado sube a $1.31 M; aun así queda por debajo del faltante de la meta ($2.05 M).</div>
+        </div>
+
+        <!-- ===== Gestión (fuera de las secciones del CEO) ===== -->
+        <div class="pie">
+          <b>Indicadores de gestión (Dirección Comercial):</b> concentración GIM 82 % · puntos activos 130 de 267 · ciclo de venta ~6 meses (meta 5–6) · CAC/CLV sin línea base.<br>
+          <b>Reglas:</b> MXN sin IVA · facturación reconocida al facturar (pendiente, Master Pricing §11.6) · separar "Trackio propio" de "dentro de contratos de Vive" · no mezclar reales con proyectados sin etiqueta.<br>
+          Estilo: <b>tema.css del Workspace Comercial</b> (copia en propuestas/estilos).
+        </div>
+      </div>
+    </main>
+  </div>
+
+<script>
+/* ---------- utilidades (mismo enfoque que web/componentes/ui.js: sin innerHTML con datos) ---------- */
+const NS = 'http://www.w3.org/2000/svg';
+function h(tag, attrs = {}, ...hijos) { const n = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) { if (k.startsWith('on')) n.addEventListener(k.slice(2), v); else n.setAttribute(k, v); } n.append(...hijos.flat().filter((x) => x !== null && x !== undefined)); return n; }
+function el(tag, attrs = {}) { const n = document.createElementNS(NS, tag); for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v); return n; }
+const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+const pesos = (n) => '$' + Math.round(n).toLocaleString('es-MX');
+const corto = (n) => n === 0 ? '$0' : n >= 1e6 ? '$' + (n / 1e6).toFixed(1) + ' M' : '$' + Math.round(n / 1e3) + ' k';
+
+/* ---------- gráfica de barras/líneas con las convenciones de web/componentes/graficas.js ---------- */
+function grafico(caja, { categorias, series, max, pasos = 4, altura = 250 }) {
+  const W = 600, H = altura, m = { t: 10, r: 12, b: 28, l: 50 }, iw = W - m.l - m.r, ih = H - m.t - m.b, n = categorias.length;
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img' });
+  const y = (v) => m.t + ih - ih * v / max, xc = (i) => m.l + iw * (i + 0.5) / n;
+  for (let k = 0; k <= pasos; k++) { const v = max * k / pasos; svg.append(el('line', { class: 'linea-malla', x1: m.l, x2: W - m.r, y1: y(v), y2: y(v) })); const t = el('text', { x: m.l - 6, y: y(v) + 3.5, 'text-anchor': 'end' }); t.textContent = corto(v); svg.append(t); }
+  categorias.forEach((c, i) => { const t = el('text', { x: xc(i), y: H - 9, 'text-anchor': 'middle' }); t.textContent = c; svg.append(t); });
+  const apiladas = series.filter((s) => s.tipo === 'barra');
+  const ultimo = Math.max(...apiladas.flatMap((s) => s.valores.map((v, i) => (v !== null ? i : -1))), -1);
+  const ancho = iw / n * 0.6;
+  for (let i = 0; i < n; i++) {
+    let base = 0;
+    apiladas.forEach((s) => { const v = s.valores[i]; if (!v) return; const y0 = y(base), y1 = y(base + v); base += v;
+      svg.append(el('rect', { class: 'g-barra' + (i === ultimo ? ' g-viva' : ''), style: `--i:${i};--sombra:${s.color}`, x: xc(i) - ancho / 2, y: y1, width: ancho, height: Math.max(0, y0 - y1 - 1.5), fill: s.color, rx: 2 })); });
+  }
+  series.filter((s) => s.tipo === 'linea').forEach((s) => {
+    const pts = s.valores.map((v, i) => (v === null ? null : [xc(i), y(v)])).filter(Boolean);
+    const d = pts.map((p, k) => (k ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
+    const atr = { d, fill: 'none', stroke: s.color, 'stroke-width': 2.2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' };
+    if (s.punteada) svg.append(el('path', { ...atr, class: 'g-flujo', 'stroke-dasharray': '5 4' }));
+    else svg.append(el('path', { ...atr, class: 'g-traza', pathLength: 1 }));
+    pts.forEach((p) => svg.append(el('circle', { class: 'g-punto', cx: p[0], cy: p[1], r: 2.6, fill: s.color })));
+    if (!s.punteada && pts.length) { const u = pts[pts.length - 1]; ['', ' b'].forEach((b, k) => svg.append(el('circle', { class: 'g-onda' + b, cx: u[0], cy: u[1], r: 7 + k * 4, fill: 'none', stroke: s.color, 'stroke-width': 1.5 }))); }
+  });
+  const linea = el('line', { x1: 0, x2: 0, y1: m.t, y2: m.t + ih, stroke: 'var(--muted-foreground)', 'stroke-width': 1, 'stroke-dasharray': '3 3', opacity: 0 });
+  svg.append(linea);
+  const tip = h('div', { class: 'tip oculto' });
+  svg.addEventListener('mousemove', (ev) => {
+    const r = svg.getBoundingClientRect(), px = (ev.clientX - r.left) * W / r.width;
+    if (px < m.l || px > W - m.r) { tip.classList.add('oculto'); linea.setAttribute('opacity', 0); return; }
+    const i = Math.min(n - 1, Math.max(0, Math.floor((px - m.l) / (iw / n))));
+    linea.setAttribute('x1', xc(i)); linea.setAttribute('x2', xc(i)); linea.setAttribute('opacity', 0.7);
+    const filas = series.filter((s) => s.valores[i] !== null && s.valores[i] !== undefined).map((s) => h('div', {}, h('span', {}, h('i', { style: `background:${s.color}` }), s.nombre), h('span', {}, pesos(s.valores[i]))));
+    const tot = apiladas.reduce((a, s) => a + (s.valores[i] || 0), 0);
+    tip.replaceChildren(h('b', {}, `${categorias[i]} 2026${apiladas.length ? ' · ' + pesos(tot) : ''}`), ...(filas.length ? filas : [h('div', {}, 'Sin datos')]));
+    tip.classList.remove('oculto');
+    const top = Math.max(...series.map((s) => s.valores[i] || 0), 0);
+    tip.style.left = (xc(i) / W * r.width) + 'px'; tip.style.top = ((y(top) / H) * r.height + 10) + 'px';
+  });
+  svg.addEventListener('mouseleave', () => { tip.classList.add('oculto'); linea.setAttribute('opacity', 0); });
+  caja.append(svg, tip);
+}
+
+/* ---------- datos (ilustrativos, ver aviso) ---------- */
+const real = [133746, 976158, 147396, 147396, 147396, 147396, 151164, 151164, 151164, 151164, null, null];
+const pres = [120746, 963158, 134746, 134746, 149746, 149746, 564034, 264034, 264034, 564034, 264034, 264034];
+const acum = (a) => { let s = 0; return a.map((v) => (v === null ? null : (s += v))); };
+grafico(document.getElementById('g-acum'), { categorias: MESES, max: 4e6, series: [
+  { nombre: 'Presupuesto', tipo: 'linea', punteada: true, color: 'var(--c6)', valores: acum(pres) },
+  { nombre: 'Real', tipo: 'linea', color: 'var(--c2)', valores: acum(real) }] });
+
+// Orden fijo de series (validado: ningún par adyacente se confunde con daltonismo en modo claro)
+const comp = [
+  { nombre: 'Licencia de plataforma', tipo: 'barra', color: 'var(--c1)', valores: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, null, null] },
+  { nombre: 'Servicios en contratos de Vive (CPS)', tipo: 'barra', color: 'var(--c2)', valores: [133746, 133746, 133746, 133746, 133746, 133746, 137514, 137514, 137514, 137514, null, null] },
+  { nombre: 'Instalaciones (CAPEX)', tipo: 'barra', color: 'var(--c4)', valores: [0, 842412, 0, 0, 0, 0, 0, 0, 0, 0, null, null] },
+  { nombre: 'Comunicación (SIM)', tipo: 'barra', color: 'var(--c-sim)', valores: [0, 0, 13650, 13650, 13650, 13650, 13650, 13650, 13650, 13650, null, null] }];
+grafico(document.getElementById('g-comp'), { categorias: MESES, max: 1e6, series: comp });
+document.getElementById('ley-comp').append(...comp.map((s) => h('span', {}, h('i', { style: `background:${s.color}` }), s.nombre)));
+document.getElementById('t-comp').append(h('table', { class: 'tabla' },
+  h('thead', {}, h('tr', {}, h('th', {}, 'Mes'), ...comp.map((s) => h('th', { class: 'der' }, s.nombre)), h('th', { class: 'der' }, 'Total'))),
+  h('tbody', {}, ...MESES.slice(0, 10).map((mm, i) => h('tr', {}, h('td', {}, mm), ...comp.map((s) => h('td', { class: 'der' }, pesos(s.valores[i]))), h('td', { class: 'der' }, h('b', {}, pesos(comp.reduce((a, s) => a + s.valores[i], 0)))))))));
+document.getElementById('btn-tabla').addEventListener('click', (ev) => {
+  const t = document.getElementById('t-comp'), g = document.getElementById('g-comp'), ver = t.classList.contains('oculto');
+  t.classList.toggle('oculto', !ver); g.classList.toggle('oculto', ver); ev.currentTarget.textContent = ver ? 'Ver gráfica' : 'Ver tabla';
+});
+
+// Ranking del recurrente (componente .ranking de tema.css)
+const rec = [['GIM · CPS auditoría SC', 124514], ['Avomex · SIM', 13650], ['CDI · contrato de Vive', 13000], ['Licencia de plataforma', 0]];
+const totRec = 151164, maxRec = 124514;
+document.getElementById('rk-rec').append(...rec.map(([k, v], i) => h('div', { class: 'rank-fila' },
+  h('span', { class: 'rank-nombre', title: k }, k),
+  h('div', { class: 'rank-pista' }, h('i', { style: `width:${(v / maxRec * 100).toFixed(1)}%;--i:${i}` })),
+  h('b', {}, pesos(v)), h('small', {}, (v / totRec * 100).toFixed(0) + ' %'))));
+
+/* ---------- secciones en botones (misma lógica que web/componentes/secciones.js) ---------- */
+(function () {
+  const rejilla = document.getElementById('rejilla');
+  const hijos = [...rejilla.children], secciones = [];
+  hijos.forEach((x) => {
+    if (x.classList.contains('seccion-titulo')) secciones.push({ titulo: x, nombre: x.querySelector('h2').textContent.trim(), nodos: [x] });
+    else if (secciones.length && !x.classList.contains('pie')) secciones[secciones.length - 1].nodos.push(x);
+  });
+  const barra = h('div', { class: 'secciones-botones', role: 'tablist', 'aria-label': 'Secciones de la página' });
+  secciones[0].titulo.before(barra);
+  const botones = [], paneles = [];
+  const activar = (i) => { botones.forEach((b, j) => { b.classList.toggle('activo', j === i); b.setAttribute('aria-selected', String(j === i)); }); paneles.forEach((p, j) => { p.hidden = j !== i; }); };
+  secciones.forEach((s, i) => {
+    const panel = h('div', { class: 'rejilla secciones-panel', role: 'tabpanel' }, s.nodos);
+    const boton = h('button', { type: 'button', class: 'secciones-boton', role: 'tab', onclick: () => activar(i) }, s.nombre);
+    botones.push(boton); paneles.push(panel);
+  });
+  const inicio = Number((location.hash.match(/sec=(\d)/) || [0, 0])[1]);
+  barra.append(...botones); barra.after(...paneles); activar(Math.min(inicio, secciones.length - 1));
+})();
+
+/* ---------- selector de tema (mismo control que web/componentes/tema.js) ---------- */
+(function () {
+  const ICONOS = { claro: ['circle:12,12,4', 'M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6'], oscuro: ['M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z'] };
+  const icono = (t) => { const s = el('svg', { viewBox: '0 0 24 24', width: 16, height: 16, fill: 'none', stroke: 'currentColor', 'stroke-width': 1.9, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'aria-hidden': 'true' });
+    ICONOS[t].forEach((f) => { if (f.startsWith('circle:')) { const [cx, cy, r] = f.slice(7).split(','); s.append(el('circle', { cx, cy, r })); } else s.append(el('path', { d: f })); }); return s; };
+  const sel = h('div', { class: 'selector-tema', role: 'radiogroup', 'aria-label': 'Tema de la interfaz' }, h('span', { class: 'selector-pastilla', 'aria-hidden': 'true' }));
+  const marcar = (t) => { sel.dataset.activo = t; sel.querySelectorAll('button').forEach((b) => b.setAttribute('aria-checked', String(b.dataset.tema === t))); };
+  const poner = (t) => { document.documentElement.setAttribute('data-tema', t); try { localStorage.setItem('tema', t); } catch (e) {} marcar(t); };
+  [['claro', 'Modo claro'], ['oscuro', 'Modo oscuro']].forEach(([t, e]) => sel.append(h('button', { type: 'button', role: 'radio', 'data-tema': t, 'aria-label': e, title: e, onclick: () => poner(t) }, icono(t))));
+  marcar(document.documentElement.getAttribute('data-tema') || 'claro');
+  document.getElementById('selector-tema').append(sel);
+})();
+
+/* ---------- fuente de los datos: ⓘ con popover (.fuente-pop de tema.css) ---------- */
+(function () {
+  const pop = h('div', { class: 'fuente-pop oculto', role: 'tooltip' });
+  document.body.append(pop);
+  document.querySelectorAll('.fuente-info').forEach((b) => {
+    const [titulo, ...fuentes] = b.dataset.fuente.split('|');
+    const mostrar = () => { pop.replaceChildren(h('b', {}, 'Fuente de los datos'), h('div', {}, titulo), h('ul', {}, ...fuentes.map((f) => h('li', {}, f)))); pop.classList.remove('oculto');
+      const r = b.getBoundingClientRect(); pop.style.left = Math.max(8, Math.min(r.right - 320, innerWidth - 330)) + 'px'; pop.style.top = (r.top - pop.offsetHeight - 8) + 'px'; b.setAttribute('aria-expanded', 'true'); };
+    const ocultar = () => { pop.classList.add('oculto'); b.setAttribute('aria-expanded', 'false'); };
+    b.addEventListener('mouseenter', mostrar); b.addEventListener('focus', mostrar); b.addEventListener('mouseleave', ocultar); b.addEventListener('blur', ocultar);
+  });
+})();
+</script>
+</body>
+</html>
